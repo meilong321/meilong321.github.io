@@ -77,11 +77,13 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="java笔记," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
 
+
+  <link rel="alternate" href="/atom.xml" title="梅's" type="application/atom+xml" />
 
 
 
@@ -93,17 +95,16 @@
 
 
 
-<meta name="description" content="session 对象 session对象是HttpSession类的实例。session对象在第一个JSP页面被装载时自动创建，完成会话期管理。session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。常用方法">
-<meta name="keywords" content="java笔记">
+<meta name="description" content="session 对象session对象是HttpSession类的实例。session对象在第一个JSP页面被装载时自动创建，完成会话期管理。session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jsp session">
 <meta property="og:url" content="https://meilong321.github.io/2017/07/01/jsp session/index.html">
 <meta property="og:site_name" content="梅&#39;s">
-<meta property="og:description" content="session 对象 session对象是HttpSession类的实例。session对象在第一个JSP页面被装载时自动创建，完成会话期管理。session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。常用方法">
-<meta property="og:updated_time" content="2017-07-02T06:13:58.550Z">
+<meta property="og:description" content="session 对象session对象是HttpSession类的实例。session对象在第一个JSP页面被装载时自动创建，完成会话期管理。session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。">
+<meta property="og:updated_time" content="2017-07-02T06:31:01.499Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jsp session">
-<meta name="twitter:description" content="session 对象 session对象是HttpSession类的实例。session对象在第一个JSP页面被装载时自动创建，完成会话期管理。session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。常用方法">
+<meta name="twitter:description" content="session 对象session对象是HttpSession类的实例。session对象在第一个JSP页面被装载时自动创建，完成会话期管理。session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。">
 
 
 
@@ -143,6 +144,16 @@
 
 
 
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?952498d812bd87f593c5b06e6802ee40";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -350,6 +361,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">java笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -397,16 +430,27 @@
       
 
       
-        <p>session 对象</p>
-<p>session对象是HttpSession类的实例。<br>session对象在第一个JSP页面被装载时自动创建，完成会话期管理。<br>session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。<br>当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。<br>常用方法<br>void setAttribute(String name , Object value )<br>设置指定名字name的属性值value，并将之存储在Session对象中．</p>
-<p>Object getAttribute(String name )<br>获取指定名字name相联系的信息．</p>
-<p>void removeAttribute( String name )<br>删除与提定名字name的相联系的信息．</p>
-<p>Enumeration getAttributeNames()<br>返回Session对象中存储的每一个属性对象，其结果为一个类举的实例．</p>
-<p>Long getCreationTime()<br>返回Session被创建的时间．最小单位为千分之一秒．</p>
-<p>String getId()<br>此方法返回惟一的标识，这些标识为每个Session而产生．当只有一个单一的值与一个Session联合时，或当日志信息与先前的Session有关时，它被当做键名用．</p>
-<p>Long GetLastAccessedTime()<br>返回当前Session对象最后被客户发送的时间，最单位为千分之一秒．</p>
-<p>int GetMaxInactiveInterval()<br>返回总时间(秒)，负值表示Session永远不会超时．该时间为该Session对象的生存时间．</p>
-<p>void invalidate()<br>销毁当前会话</p>
+        <h3 id="session-对象"><a href="#session-对象" class="headerlink" title="session 对象"></a>session 对象</h3><p>session对象是HttpSession类的实例。<br>session对象在第一个JSP页面被装载时自动创建，完成会话期管理。<br>session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。<br>当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。<br><a id="more"></a><br>常用方法</p>
+<ul>
+<li><p>void setAttribute(String name , Object value )<br>设置指定名字name的属性值value，并将之存储在Session对象中．</p>
+</li>
+<li><p>Object getAttribute(String name )<br>获取指定名字name相联系的信息．</p>
+</li>
+<li><p>void removeAttribute( String name )<br>删除与提定名字name的相联系的信息．</p>
+</li>
+<li><p>Enumeration getAttributeNames()<br>返回Session对象中存储的每一个属性对象，其结果为一个类举的实例．</p>
+</li>
+<li><p>Long getCreationTime()<br>返回Session被创建的时间．最小单位为千分之一秒．</p>
+</li>
+<li><p>String getId()<br>此方法返回惟一的标识，这些标识为每个Session而产生．当只有一个单一的值与一个Session联合时，或当日志信息与先前的Session有关时，它被当做键名用．</p>
+</li>
+<li><p>Long GetLastAccessedTime()<br>返回当前Session对象最后被客户发送的时间，最单位为千分之一秒．</p>
+</li>
+<li><p>int GetMaxInactiveInterval()<br>返回总时间(秒)，负值表示Session永远不会超时．该时间为该Session对象的生存时间．</p>
+</li>
+<li><p>void invalidate()<br>销毁当前会话</p>
+</li>
+</ul>
 
       
     </div>
@@ -434,12 +478,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/java笔记/" rel="tag"># java笔记</a>
-          
-        </div>
-      
 
       
       
@@ -449,15 +487,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/07/01/nihao/" rel="next" title="nihao">
+                <i class="fa fa-chevron-left"></i> nihao
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/07/01/hello-word/" rel="prev" title="hello word">
-                hello word <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -471,6 +509,29 @@
 
 
     <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
       
     </div>
   </div>
@@ -506,8 +567,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/002.jpg"
@@ -529,20 +599,27 @@
           
 
           
-
-          
             
             
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
                 <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">标签</span>
+                <span class="site-state-item-name">分类</span>
               </a>
             </div>
           
 
+          
+
         </nav>
 
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
         
 
         <div class="links-of-author motion-element">
@@ -560,6 +637,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#session-对象"><span class="nav-number">1.</span> <span class="nav-text">session 对象</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
