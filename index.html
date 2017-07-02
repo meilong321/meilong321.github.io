@@ -208,12 +208,42 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
           </a>
         </li>
       
@@ -540,6 +570,150 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://meilong321.github.io/2017/07/01/jsp session/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="melon">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/002.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梅's">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/01/jsp session/" itemprop="url">jsp session</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-01T22:28:35+08:00">
+                2017-07-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/07/01/jsp session/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2017/07/01/jsp session/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+             <span id="/2017/07/01/jsp session/" class="leancloud_visitors" data-flag-title="jsp session">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>session 对象</p>
+<p>session对象是HttpSession类的实例。<br>session对象在第一个JSP页面被装载时自动创建，完成会话期管理。<br>session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。<br>当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。<br>常用方法<br>void setAttribute(String name , Object value )<br>设置指定名字name的属性值value，并将之存储在Session对象中．</p>
+<p>Object getAttribute(String name )<br>获取指定名字name相联系的信息．</p>
+<p>void removeAttribute( String name )<br>删除与提定名字name的相联系的信息．</p>
+<p>Enumeration getAttributeNames()<br>返回Session对象中存储的每一个属性对象，其结果为一个类举的实例．</p>
+<p>Long getCreationTime()<br>返回Session被创建的时间．最小单位为千分之一秒．</p>
+<p>String getId()<br>此方法返回惟一的标识，这些标识为每个Session而产生．当只有一个单一的值与一个Session联合时，或当日志信息与先前的Session有关时，它被当做键名用．</p>
+<p>Long GetLastAccessedTime()<br>返回当前Session对象最后被客户发送的时间，最单位为千分之一秒．</p>
+<p>int GetMaxInactiveInterval()<br>返回总时间(秒)，负值表示Session永远不会超时．该时间为该Session对象的生存时间．</p>
+<p>void invalidate()<br>销毁当前会话</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
   </section>
 
   
@@ -585,7 +759,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -593,6 +767,15 @@
 
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
