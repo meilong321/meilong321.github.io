@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[servletFileUpload]]></title>
+    <url>%2F2017%2F07%2F05%2FservletFileUpload%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[FileItemFactory]]></title>
+    <url>%2F2017%2F07%2F05%2FFileItemFactory%2F</url>
+    <content type="text"><![CDATA[FileItemFactoryFileItemFactory是一个接口, 是用于构建FileItem实列的工厂 DiskFileItemFactory类是FileItemFactory接口的实现类]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[commons-fileupload]]></title>
+    <url>%2F2017%2F07%2F05%2Fjndi%2F</url>
+    <content type="text"><![CDATA[FileItem FileItem 是一个接口, 定义了用于处理表单内容及文件内容的方法. 每个表单中的单字段元素都会被封装成一个FileItem对象 常用方法 String getFieldName(); 返回表单字段元素的name属性的值 boolean isFormField(); 判断FileItem封装的数据类型trun : 普通表单字段false : 文件表单字段 String getName();返回上传文件的文件名(根据浏览器不同, 可能包含路径) void write();将FileItem对象中的内容保存到指定文件 String getString(); 把FileItem对象保存的主体内容以一个字符串返回 String getString(String encoding);getString()重载形式, 按照指定编码格式将内容转换成字符串并返回 long getSize(); 返回单个上传文件的字节数 FileItemFactoryFileItemFactory是一个接口, 是用于构建FileItem实列的工厂 DiskFileItemFactory类是FileItemFactory接口的实现类 常用方法 void setSizeThreshold(int sizeThreshold); 设置缓存大小 void setRepositoryPath(String path); 设置临时文件存放目录 ServeltFileUploadServeltFileUpload类是处理文件上传的一个核心类 以List形式返回每个被封装成FileItem对象的表单元素集合 ServeltFileUpload构造时通常以FileItemFactory对象作为参数 ####常用方法 boolean isMultPartContent(HttpServletRequest request); 静态方法, 判断请求数据中的内容是否是multipart/form-data类型 List parseRequest(HttpServletRequest request); 将请求数据中的每一字段, 单独封装成FileItem对象, 放入list集合返回 void setSizeMax(long fileSizeMax); 设置请求信息实体内容最大允许的的字节数(包含文件和表单数据) void setFileSizeMax(long fileSizeMax); 设置文件最大上传字节数 void setHeaderEncoding(String encoding); 设置转换时使用的字符编码]]></content>
+      <categories>
+        <category>java笔记</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[jsp session]]></title>
     <url>%2F2017%2F07%2F01%2Fjsp%20session%2F</url>
     <content type="text"><![CDATA[session 对象session对象是HttpSession类的实例。session对象在第一个JSP页面被装载时自动创建，完成会话期管理。session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。常用方法 void setAttribute(String name , Object value )设置指定名字name的属性值value，并将之存储在Session对象中． Object getAttribute(String name )获取指定名字name相联系的信息． void removeAttribute( String name )删除与提定名字name的相联系的信息． Enumeration getAttributeNames()返回Session对象中存储的每一个属性对象，其结果为一个类举的实例． Long getCreationTime()返回Session被创建的时间．最小单位为千分之一秒． String getId()此方法返回惟一的标识，这些标识为每个Session而产生．当只有一个单一的值与一个Session联合时，或当日志信息与先前的Session有关时，它被当做键名用． Long GetLastAccessedTime()返回当前Session对象最后被客户发送的时间，最单位为千分之一秒． int GetMaxInactiveInterval()返回总时间(秒)，负值表示Session永远不会超时．该时间为该Session对象的生存时间． void invalidate()销毁当前会话]]></content>

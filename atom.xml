@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://meilong321.github.io/"/>
-  <updated>2017-07-02T06:31:01.499Z</updated>
+  <updated>2017-07-05T07:13:30.400Z</updated>
   <id>https://meilong321.github.io/</id>
   
   <author>
@@ -14,6 +14,85 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>servletFileUpload</title>
+    <link href="https://meilong321.github.io/2017/07/05/servletFileUpload/"/>
+    <id>https://meilong321.github.io/2017/07/05/servletFileUpload/</id>
+    <published>2017-07-05T07:13:30.000Z</published>
+    <updated>2017-07-05T07:13:30.400Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>FileItemFactory</title>
+    <link href="https://meilong321.github.io/2017/07/05/FileItemFactory/"/>
+    <id>https://meilong321.github.io/2017/07/05/FileItemFactory/</id>
+    <published>2017-07-05T07:12:55.000Z</published>
+    <updated>2017-07-05T07:44:26.645Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="FileItemFactory"><a href="#FileItemFactory" class="headerlink" title="FileItemFactory"></a>FileItemFactory</h2><p>FileItemFactory是一个接口, 是用于构建FileItem实列的工厂<br>  DiskFileItemFactory类是FileItemFactory接口的实现类</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;FileItemFactory&quot;&gt;&lt;a href=&quot;#FileItemFactory&quot; class=&quot;headerlink&quot; title=&quot;FileItemFactory&quot;&gt;&lt;/a&gt;FileItemFactory&lt;/h2&gt;&lt;p&gt;FileItemFactory是一个
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>commons-fileupload</title>
+    <link href="https://meilong321.github.io/2017/07/05/jndi/"/>
+    <id>https://meilong321.github.io/2017/07/05/jndi/</id>
+    <published>2017-07-05T05:48:31.000Z</published>
+    <updated>2017-07-05T09:25:06.683Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="FileItem"><a href="#FileItem" class="headerlink" title="FileItem"></a>FileItem</h2><p>  FileItem 是一个接口, 定义了用于处理表单内容及文件内容的方法.<br>  每个表单中的单字段元素都会被封装成一个FileItem对象<br><a id="more"></a></p>
+<h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><ul>
+<li>String getFieldName();<br>  返回表单字段元素的name属性的值</li>
+<li>boolean isFormField();<br>  判断FileItem封装的数据类型<br>trun : 普通表单字段<br>false : 文件表单字段</li>
+<li>String getName();<br>返回上传文件的文件名(根据浏览器不同, 可能包含路径)</li>
+<li>void write();<br>将FileItem对象中的内容保存到指定文件</li>
+<li>String getString();<br>  把FileItem对象保存的主体内容以一个字符串返回</li>
+<li>String getString(String encoding);<br>getString()重载形式, 按照指定编码格式将内容转换成字符串并返回</li>
+<li>long getSize();<br>  返回单个上传文件的字节数</li>
+</ul>
+<p><br></p>
+<h2 id="FileItemFactory"><a href="#FileItemFactory" class="headerlink" title="FileItemFactory"></a>FileItemFactory</h2><p>FileItemFactory是一个接口, 是用于构建FileItem实列的工厂<br>  DiskFileItemFactory类是FileItemFactory接口的实现类</p>
+<h4 id="常用方法-1"><a href="#常用方法-1" class="headerlink" title="常用方法"></a>常用方法</h4><ul>
+<li>void  setSizeThreshold(int sizeThreshold);<br>  设置缓存大小</li>
+<li>void  setRepositoryPath(String path);<br>  设置临时文件存放目录</li>
+</ul>
+<p><br></p>
+<h2 id="ServeltFileUpload"><a href="#ServeltFileUpload" class="headerlink" title="ServeltFileUpload"></a>ServeltFileUpload</h2><p>ServeltFileUpload类是处理文件上传的一个核心类<br>    以List形式返回每个被封装成FileItem对象的表单元素集合<br>    ServeltFileUpload构造时通常以FileItemFactory对象作为参数</p>
+<p>####常用方法</p>
+<ul>
+<li>boolean isMultPartContent(HttpServletRequest request);<br>  静态方法, 判断请求数据中的内容是否是multipart/form-data类型</li>
+<li>List parseRequest(HttpServletRequest request);<br>  将请求数据中的每一字段, 单独封装成FileItem对象, 放入list集合返回</li>
+<li>void setSizeMax(long fileSizeMax);<br>  设置请求信息实体内容最大允许的的字节数(包含文件和表单数据)</li>
+<li>void setFileSizeMax(long fileSizeMax);<br>  设置文件最大上传字节数</li>
+<li>void setHeaderEncoding(String encoding);<br>  设置转换时使用的字符编码</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;FileItem&quot;&gt;&lt;a href=&quot;#FileItem&quot; class=&quot;headerlink&quot; title=&quot;FileItem&quot;&gt;&lt;/a&gt;FileItem&lt;/h2&gt;&lt;p&gt;  FileItem 是一个接口, 定义了用于处理表单内容及文件内容的方法.&lt;br&gt;  每个表单中的单字段元素都会被封装成一个FileItem对象&lt;br&gt;
+    
+    </summary>
+    
+      <category term="java笔记" scheme="https://meilong321.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>jsp session</title>
