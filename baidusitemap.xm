@@ -4,7 +4,7 @@
 
     
   <url>
-    <loc>https://meilong321.github.io/2017/07/05/jndi/</loc>
+    <loc>https://meilong321.github.io/2017/07/05/commons/</loc>
     <lastmod>2017-07-05T09:25:06.683Z</lastmod>
     <data>
         <display>
@@ -16,36 +16,6 @@
              
               <breadCrumb title="java笔记" url="https://meilong321.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://meilong321.github.io/2017/07/05/FileItemFactory/</loc>
-    <lastmod>2017-07-05T07:44:26.645Z</lastmod>
-    <data>
-        <display>
-        <title>FileItemFactory</title>
-        <pubTime>2017-07-05T07:12:55.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://meilong321.github.io/2017/07/05/servletFileUpload/</loc>
-    <lastmod>2017-07-05T07:13:30.400Z</lastmod>
-    <data>
-        <display>
-        <title>servletFileUpload</title>
-        <pubTime>2017-07-05T07:13:30.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
