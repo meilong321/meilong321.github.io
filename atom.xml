@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://meilong321.github.io/"/>
-  <updated>2017-07-05T09:25:06.683Z</updated>
+  <updated>2017-07-05T11:50:41.003Z</updated>
   <id>https://meilong321.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://meilong321.github.io/2017/07/05/commons/"/>
     <id>https://meilong321.github.io/2017/07/05/commons/</id>
     <published>2017-07-05T05:48:31.000Z</published>
-    <updated>2017-07-05T09:25:06.683Z</updated>
+    <updated>2017-07-05T11:50:41.003Z</updated>
     
     <content type="html"><![CDATA[<h2 id="FileItem"><a href="#FileItem" class="headerlink" title="FileItem"></a>FileItem</h2><p>  FileItem 是一个接口, 定义了用于处理表单内容及文件内容的方法.<br>  每个表单中的单字段元素都会被封装成一个FileItem对象<br><a id="more"></a></p>
 <h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><ul>
@@ -40,8 +40,7 @@
 </ul>
 <p><br></p>
 <h2 id="ServeltFileUpload"><a href="#ServeltFileUpload" class="headerlink" title="ServeltFileUpload"></a>ServeltFileUpload</h2><p>ServeltFileUpload类是处理文件上传的一个核心类<br>    以List形式返回每个被封装成FileItem对象的表单元素集合<br>    ServeltFileUpload构造时通常以FileItemFactory对象作为参数</p>
-<p>####常用方法</p>
-<ul>
+<h4 id="常用方法-2"><a href="#常用方法-2" class="headerlink" title="常用方法"></a>常用方法</h4><ul>
 <li>boolean isMultPartContent(HttpServletRequest request);<br>  静态方法, 判断请求数据中的内容是否是multipart/form-data类型</li>
 <li>List parseRequest(HttpServletRequest request);<br>  将请求数据中的每一字段, 单独封装成FileItem对象, 放入list集合返回</li>
 <li>void setSizeMax(long fileSizeMax);<br>  设置请求信息实体内容最大允许的的字节数(包含文件和表单数据)</li>

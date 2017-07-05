@@ -101,7 +101,7 @@
 <meta property="og:url" content="https://meilong321.github.io/2017/07/05/commons/index.html">
 <meta property="og:site_name" content="梅&#39;s">
 <meta property="og:description" content="FileItem  FileItem 是一个接口, 定义了用于处理表单内容及文件内容的方法.  每个表单中的单字段元素都会被封装成一个FileItem对象">
-<meta property="og:updated_time" content="2017-07-05T09:25:06.683Z">
+<meta property="og:updated_time" content="2017-07-05T11:50:41.003Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="commons-fileupload">
 <meta name="twitter:description" content="FileItem  FileItem 是一个接口, 定义了用于处理表单内容及文件内容的方法.  每个表单中的单字段元素都会被封装成一个FileItem对象">
@@ -458,8 +458,7 @@
 </ul>
 <p><br></p>
 <h2 id="ServeltFileUpload"><a href="#ServeltFileUpload" class="headerlink" title="ServeltFileUpload"></a>ServeltFileUpload</h2><p>ServeltFileUpload类是处理文件上传的一个核心类<br>    以List形式返回每个被封装成FileItem对象的表单元素集合<br>    ServeltFileUpload构造时通常以FileItemFactory对象作为参数</p>
-<p>####常用方法</p>
-<ul>
+<h4 id="常用方法-2"><a href="#常用方法-2" class="headerlink" title="常用方法"></a>常用方法</h4><ul>
 <li>boolean isMultPartContent(HttpServletRequest request);<br>  静态方法, 判断请求数据中的内容是否是multipart/form-data类型</li>
 <li>List parseRequest(HttpServletRequest request);<br>  将请求数据中的每一字段, 单独封装成FileItem对象, 放入list集合返回</li>
 <li>void setSizeMax(long fileSizeMax);<br>  设置请求信息实体内容最大允许的的字节数(包含文件和表单数据)</li>
@@ -673,7 +672,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#FileItem"><span class="nav-number">1.</span> <span class="nav-text">FileItem</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用方法"><span class="nav-number">1.0.1.</span> <span class="nav-text">常用方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FileItemFactory"><span class="nav-number">2.</span> <span class="nav-text">FileItemFactory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用方法-1"><span class="nav-number">2.0.1.</span> <span class="nav-text">常用方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ServeltFileUpload"><span class="nav-number">3.</span> <span class="nav-text">ServeltFileUpload</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#FileItem"><span class="nav-number">1.</span> <span class="nav-text">FileItem</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用方法"><span class="nav-number">1.0.1.</span> <span class="nav-text">常用方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FileItemFactory"><span class="nav-number">2.</span> <span class="nav-text">FileItemFactory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用方法-1"><span class="nav-number">2.0.1.</span> <span class="nav-text">常用方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ServeltFileUpload"><span class="nav-number">3.</span> <span class="nav-text">ServeltFileUpload</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用方法-2"><span class="nav-number">3.0.1.</span> <span class="nav-text">常用方法</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
