@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://meilong321.github.io/"/>
-  <updated>2017-07-05T11:50:41.003Z</updated>
+  <updated>2017-09-17T12:26:49.366Z</updated>
   <id>https://meilong321.github.io/</id>
   
   <author>
@@ -14,6 +14,942 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ASCII码对照表</title>
+    <link href="https://meilong321.github.io/2017/09/17/ASCII/"/>
+    <id>https://meilong321.github.io/2017/09/17/ASCII/</id>
+    <published>2017-09-17T12:03:27.000Z</published>
+    <updated>2017-09-17T12:26:49.366Z</updated>
+    
+    <content type="html"><![CDATA[<p>SCII（American Standard Code for Information Interchange，美国信息互换标准代码，ASCⅡ）是基于拉丁字母的一套电脑编码系统。它主要用于显示现代英语和其他西欧语言。它是现今最通用的单字节编码系统，并等同于国际标准ISO/IEC 646。<br>　　ASCII第一次以规范标准的型态发表是在1967年，最后一次更新则是在1986年，至今为止共定义了128个字符，其中33个字符无法显示（这是以现今操作系统为依归，但在DOS模式下可显示出一些诸如笑脸、扑克牌花式等8-bit符号），且这33个字符多数都已是陈废的控制字符，控制字符的用途主要是用来操控已经处理过的文字，在33个字符之外的是95个可显示的字符，包含用键盘敲下空白键所产生的空白字符也算1个可显示字符（显示为空白）。<br><a id="more"></a></p>
+<h3 id="ASCII控制字符"><a href="#ASCII控制字符" class="headerlink" title="ASCII控制字符"></a>ASCII控制字符</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">二进制</th>
+<th style="text-align:center">十进制</th>
+<th style="text-align:center">十六进制</th>
+<th style="text-align:center">缩 写</th>
+<th style="text-align:center">可以显示的表示法</th>
+<th style="text-align:center">名称/意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0000 0000</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">00</td>
+<td style="text-align:center">NUL</td>
+<td style="text-align:center">␀</td>
+<td style="text-align:center">空字符（Null）</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 0001</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">01</td>
+<td style="text-align:center">SOH</td>
+<td style="text-align:center">␁</td>
+<td style="text-align:center">标题开始</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 0010</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">02</td>
+<td style="text-align:center">STX</td>
+<td style="text-align:center">␂</td>
+<td style="text-align:center">本文开始</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 0011</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">03</td>
+<td style="text-align:center">ETX</td>
+<td style="text-align:center">␃</td>
+<td style="text-align:center">本文结束</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 0100</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">04</td>
+<td style="text-align:center">EOT</td>
+<td style="text-align:center">␄</td>
+<td style="text-align:center">传输结束</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 0101</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">05</td>
+<td style="text-align:center">ENQ</td>
+<td style="text-align:center">␅</td>
+<td style="text-align:center">请求</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 0110</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">06</td>
+<td style="text-align:center">ACK</td>
+<td style="text-align:center">␆</td>
+<td style="text-align:center">确认回应</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 0111</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">07</td>
+<td style="text-align:center">BEL</td>
+<td style="text-align:center">␇</td>
+<td style="text-align:center">响铃</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 1000</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">08</td>
+<td style="text-align:center">BS</td>
+<td style="text-align:center">␈</td>
+<td style="text-align:center">退格</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 1001</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">09</td>
+<td style="text-align:center">HT</td>
+<td style="text-align:center">␉</td>
+<td style="text-align:center">水平定位符号</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 1010</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">0A</td>
+<td style="text-align:center">LF</td>
+<td style="text-align:center">␊</td>
+<td style="text-align:center">换行键</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 1011</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">0B</td>
+<td style="text-align:center">VT</td>
+<td style="text-align:center">␋</td>
+<td style="text-align:center">垂直定位符号</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 1100</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">0C</td>
+<td style="text-align:center">FF</td>
+<td style="text-align:center">␌</td>
+<td style="text-align:center">换页键</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 1101</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">0D</td>
+<td style="text-align:center">CR</td>
+<td style="text-align:center">␍</td>
+<td style="text-align:center">归位键</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 1110</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">0E</td>
+<td style="text-align:center">SO</td>
+<td style="text-align:center">␎</td>
+<td style="text-align:center">取消变换（Shift out）</td>
+</tr>
+<tr>
+<td style="text-align:center">0000 1111</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">0F</td>
+<td style="text-align:center">SI</td>
+<td style="text-align:center">␏</td>
+<td style="text-align:center">启用变换（Shift in）</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 0000</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">DLE</td>
+<td style="text-align:center">␐</td>
+<td style="text-align:center">跳出数据通讯</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 0001</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">DC1</td>
+<td style="text-align:center">␑</td>
+<td style="text-align:center">设备控制一（XON 启用软件速度控制）</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 0010</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">DC2</td>
+<td style="text-align:center">␒</td>
+<td style="text-align:center">设备控制二</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 0011</td>
+<td style="text-align:center">19</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">DC3</td>
+<td style="text-align:center">␓</td>
+<td style="text-align:center">设备控制三（XOFF 停用软件速度控制）</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 0100</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">DC4</td>
+<td style="text-align:center">␔</td>
+<td style="text-align:center">设备控制四</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 0101</td>
+<td style="text-align:center">21</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">NAK</td>
+<td style="text-align:center">␕</td>
+<td style="text-align:center">确认失败回应</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 0110</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">SYN</td>
+<td style="text-align:center">␖</td>
+<td style="text-align:center">同步用暂停</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 0111</td>
+<td style="text-align:center">23</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">ETB</td>
+<td style="text-align:center">␗</td>
+<td style="text-align:center">区块传输结束</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 1000</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">CAN</td>
+<td style="text-align:center">␘</td>
+<td style="text-align:center">取消</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 1001</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">19</td>
+<td style="text-align:center">EM</td>
+<td style="text-align:center">␙</td>
+<td style="text-align:center">连接介质中断</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 1010</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">1A</td>
+<td style="text-align:center">SUB</td>
+<td style="text-align:center">␚</td>
+<td style="text-align:center">替换</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 1011</td>
+<td style="text-align:center">27</td>
+<td style="text-align:center">1B</td>
+<td style="text-align:center">ESC</td>
+<td style="text-align:center">␛</td>
+<td style="text-align:center">跳出</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 1100</td>
+<td style="text-align:center">28</td>
+<td style="text-align:center">1C</td>
+<td style="text-align:center">FS</td>
+<td style="text-align:center">␜</td>
+<td style="text-align:center">文件分割符</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 1101</td>
+<td style="text-align:center">29</td>
+<td style="text-align:center">1D</td>
+<td style="text-align:center">GS</td>
+<td style="text-align:center">␝</td>
+<td style="text-align:center">组群分隔符</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 1110</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">1E</td>
+<td style="text-align:center">RS</td>
+<td style="text-align:center">␞</td>
+<td style="text-align:center">记录分隔符</td>
+</tr>
+<tr>
+<td style="text-align:center">0001 1111</td>
+<td style="text-align:center">31</td>
+<td style="text-align:center">1F</td>
+<td style="text-align:center">US</td>
+<td style="text-align:center">␟</td>
+<td style="text-align:center">单元分隔符</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 1111</td>
+<td style="text-align:center">127</td>
+<td style="text-align:center">7F</td>
+<td style="text-align:center">DEL</td>
+<td style="text-align:center">␡</td>
+<td style="text-align:center">删除</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ASCII显示字符"><a href="#ASCII显示字符" class="headerlink" title="ASCII显示字符"></a>ASCII显示字符</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">二进制</th>
+<th style="text-align:center">十进制</th>
+<th style="text-align:left">十六进制</th>
+<th style="text-align:left">显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0010 0000</td>
+<td style="text-align:center">32</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">（空格）(␠)</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 0001</td>
+<td style="text-align:center">33</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">!</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 0010</td>
+<td style="text-align:center">34</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">“</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 0011</td>
+<td style="text-align:center">35</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">#</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 0100</td>
+<td style="text-align:center">36</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">$</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 0101</td>
+<td style="text-align:center">37</td>
+<td style="text-align:left">25</td>
+<td style="text-align:left">%</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 0110</td>
+<td style="text-align:center">38</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">&amp;</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 0111</td>
+<td style="text-align:center">39</td>
+<td style="text-align:left">27</td>
+<td style="text-align:left">‘</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 1000</td>
+<td style="text-align:center">40</td>
+<td style="text-align:left">28</td>
+<td style="text-align:left">(</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 1001</td>
+<td style="text-align:center">41</td>
+<td style="text-align:left">29</td>
+<td style="text-align:left">)</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 1010</td>
+<td style="text-align:center">42</td>
+<td style="text-align:left">2A</td>
+<td style="text-align:left">*</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 1011</td>
+<td style="text-align:center">43</td>
+<td style="text-align:left">2B</td>
+<td style="text-align:left">+</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 1100</td>
+<td style="text-align:center">44</td>
+<td style="text-align:left">2C</td>
+<td style="text-align:left">,</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 1101</td>
+<td style="text-align:center">45</td>
+<td style="text-align:left">2D</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 1110</td>
+<td style="text-align:center">46</td>
+<td style="text-align:left">2E</td>
+<td style="text-align:left">.</td>
+</tr>
+<tr>
+<td style="text-align:center">0010 1111</td>
+<td style="text-align:center">47</td>
+<td style="text-align:left">2F</td>
+<td style="text-align:left">/</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 0000</td>
+<td style="text-align:center">48</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 0001</td>
+<td style="text-align:center">49</td>
+<td style="text-align:left">31</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 0010</td>
+<td style="text-align:center">50</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 0011</td>
+<td style="text-align:center">51</td>
+<td style="text-align:left">33</td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 0100</td>
+<td style="text-align:center">52</td>
+<td style="text-align:left">34</td>
+<td style="text-align:left">4</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 0101</td>
+<td style="text-align:center">53</td>
+<td style="text-align:left">35</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 0110</td>
+<td style="text-align:center">54</td>
+<td style="text-align:left">36</td>
+<td style="text-align:left">6</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 0111</td>
+<td style="text-align:center">55</td>
+<td style="text-align:left">37</td>
+<td style="text-align:left">7</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 1000</td>
+<td style="text-align:center">56</td>
+<td style="text-align:left">38</td>
+<td style="text-align:left">8</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 1001</td>
+<td style="text-align:center">57</td>
+<td style="text-align:left">39</td>
+<td style="text-align:left">9</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 1010</td>
+<td style="text-align:center">58</td>
+<td style="text-align:left">3A</td>
+<td style="text-align:left">:</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 1011</td>
+<td style="text-align:center">59</td>
+<td style="text-align:left">3B</td>
+<td style="text-align:left">;</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 1100</td>
+<td style="text-align:center">60</td>
+<td style="text-align:left">3C</td>
+<td style="text-align:left">&lt;</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 1101</td>
+<td style="text-align:center">61</td>
+<td style="text-align:left">3D</td>
+<td style="text-align:left">=</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 1110</td>
+<td style="text-align:center">62</td>
+<td style="text-align:left">3E</td>
+<td style="text-align:left">&gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">0011 1111</td>
+<td style="text-align:center">63</td>
+<td style="text-align:left">3F</td>
+<td style="text-align:left">?</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 0000</td>
+<td style="text-align:center">64</td>
+<td style="text-align:left">40</td>
+<td style="text-align:left">@</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 0001</td>
+<td style="text-align:center">65</td>
+<td style="text-align:left">41</td>
+<td style="text-align:left">A</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 0010</td>
+<td style="text-align:center">66</td>
+<td style="text-align:left">42</td>
+<td style="text-align:left">B</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 0011</td>
+<td style="text-align:center">67</td>
+<td style="text-align:left">43</td>
+<td style="text-align:left">C</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 0100</td>
+<td style="text-align:center">68</td>
+<td style="text-align:left">44</td>
+<td style="text-align:left">D</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 0101</td>
+<td style="text-align:center">69</td>
+<td style="text-align:left">45</td>
+<td style="text-align:left">E</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 0110</td>
+<td style="text-align:center">70</td>
+<td style="text-align:left">46</td>
+<td style="text-align:left">F</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 0111</td>
+<td style="text-align:center">71</td>
+<td style="text-align:left">47</td>
+<td style="text-align:left">G</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 1000</td>
+<td style="text-align:center">72</td>
+<td style="text-align:left">48</td>
+<td style="text-align:left">H</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 1001</td>
+<td style="text-align:center">73</td>
+<td style="text-align:left">49</td>
+<td style="text-align:left">I</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 1010</td>
+<td style="text-align:center">74</td>
+<td style="text-align:left">4A</td>
+<td style="text-align:left">J</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 1011</td>
+<td style="text-align:center">75</td>
+<td style="text-align:left">4B</td>
+<td style="text-align:left">K</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 1100</td>
+<td style="text-align:center">76</td>
+<td style="text-align:left">4C</td>
+<td style="text-align:left">L</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 1101</td>
+<td style="text-align:center">77</td>
+<td style="text-align:left">4D</td>
+<td style="text-align:left">M</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 1110</td>
+<td style="text-align:center">78</td>
+<td style="text-align:left">4E</td>
+<td style="text-align:left">N</td>
+</tr>
+<tr>
+<td style="text-align:center">0100 1111</td>
+<td style="text-align:center">79</td>
+<td style="text-align:left">4F</td>
+<td style="text-align:left">O</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 0000</td>
+<td style="text-align:center">80</td>
+<td style="text-align:left">50</td>
+<td style="text-align:left">P</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 0001</td>
+<td style="text-align:center">81</td>
+<td style="text-align:left">51</td>
+<td style="text-align:left">Q</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 0010</td>
+<td style="text-align:center">82</td>
+<td style="text-align:left">52</td>
+<td style="text-align:left">R</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 0011</td>
+<td style="text-align:center">83</td>
+<td style="text-align:left">53</td>
+<td style="text-align:left">S</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 0100</td>
+<td style="text-align:center">84</td>
+<td style="text-align:left">54</td>
+<td style="text-align:left">T</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 0101</td>
+<td style="text-align:center">85</td>
+<td style="text-align:left">55</td>
+<td style="text-align:left">U</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 0110</td>
+<td style="text-align:center">86</td>
+<td style="text-align:left">56</td>
+<td style="text-align:left">V</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 0111</td>
+<td style="text-align:center">87</td>
+<td style="text-align:left">57</td>
+<td style="text-align:left">W</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 1000</td>
+<td style="text-align:center">88</td>
+<td style="text-align:left">58</td>
+<td style="text-align:left">X</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 1001</td>
+<td style="text-align:center">89</td>
+<td style="text-align:left">59</td>
+<td style="text-align:left">Y</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 1010</td>
+<td style="text-align:center">90</td>
+<td style="text-align:left">5A</td>
+<td style="text-align:left">Z</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 1011</td>
+<td style="text-align:center">91</td>
+<td style="text-align:left">5B</td>
+<td style="text-align:left">[</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 1100</td>
+<td style="text-align:center">92</td>
+<td style="text-align:left">5C</td>
+<td style="text-align:left">\</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 1101</td>
+<td style="text-align:center">93</td>
+<td style="text-align:left">5D</td>
+<td style="text-align:left">]</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 1110</td>
+<td style="text-align:center">94</td>
+<td style="text-align:left">5E</td>
+<td style="text-align:left">^</td>
+</tr>
+<tr>
+<td style="text-align:center">0101 1111</td>
+<td style="text-align:center">95</td>
+<td style="text-align:left">5F</td>
+<td style="text-align:left">_</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 0000</td>
+<td style="text-align:center">96</td>
+<td style="text-align:left">60</td>
+<td style="text-align:left">`</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 0001</td>
+<td style="text-align:center">97</td>
+<td style="text-align:left">61</td>
+<td style="text-align:left">a</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 0010</td>
+<td style="text-align:center">98</td>
+<td style="text-align:left">62</td>
+<td style="text-align:left">b</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 0011</td>
+<td style="text-align:center">99</td>
+<td style="text-align:left">63</td>
+<td style="text-align:left">c</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 0100</td>
+<td style="text-align:center">100</td>
+<td style="text-align:left">64</td>
+<td style="text-align:left">d</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 0101</td>
+<td style="text-align:center">101</td>
+<td style="text-align:left">65</td>
+<td style="text-align:left">e</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 0110</td>
+<td style="text-align:center">102</td>
+<td style="text-align:left">66</td>
+<td style="text-align:left">f</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 0111</td>
+<td style="text-align:center">103</td>
+<td style="text-align:left">67</td>
+<td style="text-align:left">g</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 1000</td>
+<td style="text-align:center">104</td>
+<td style="text-align:left">68</td>
+<td style="text-align:left">h</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 1001</td>
+<td style="text-align:center">105</td>
+<td style="text-align:left">69</td>
+<td style="text-align:left">i</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 1010</td>
+<td style="text-align:center">106</td>
+<td style="text-align:left">6A</td>
+<td style="text-align:left">j</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 1011</td>
+<td style="text-align:center">107</td>
+<td style="text-align:left">6B</td>
+<td style="text-align:left">k</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 1100</td>
+<td style="text-align:center">108</td>
+<td style="text-align:left">6C</td>
+<td style="text-align:left">l</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 1101</td>
+<td style="text-align:center">109</td>
+<td style="text-align:left">6D</td>
+<td style="text-align:left">m</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 1110</td>
+<td style="text-align:center">110</td>
+<td style="text-align:left">6E</td>
+<td style="text-align:left">n</td>
+</tr>
+<tr>
+<td style="text-align:center">0110 1111</td>
+<td style="text-align:center">111</td>
+<td style="text-align:left">6F</td>
+<td style="text-align:left">o</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 0000</td>
+<td style="text-align:center">112</td>
+<td style="text-align:left">70</td>
+<td style="text-align:left">p</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 0001</td>
+<td style="text-align:center">113</td>
+<td style="text-align:left">71</td>
+<td style="text-align:left">q</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 0010</td>
+<td style="text-align:center">114</td>
+<td style="text-align:left">72</td>
+<td style="text-align:left">r</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 0011</td>
+<td style="text-align:center">115</td>
+<td style="text-align:left">73</td>
+<td style="text-align:left">s</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 0100</td>
+<td style="text-align:center">116</td>
+<td style="text-align:left">74</td>
+<td style="text-align:left">t</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 0101</td>
+<td style="text-align:center">117</td>
+<td style="text-align:left">75</td>
+<td style="text-align:left">u</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 0110</td>
+<td style="text-align:center">118</td>
+<td style="text-align:left">76</td>
+<td style="text-align:left">v</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 0111</td>
+<td style="text-align:center">119</td>
+<td style="text-align:left">77</td>
+<td style="text-align:left">w</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 1000</td>
+<td style="text-align:center">120</td>
+<td style="text-align:left">78</td>
+<td style="text-align:left">x</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 1001</td>
+<td style="text-align:center">121</td>
+<td style="text-align:left">79</td>
+<td style="text-align:left">y</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 1010</td>
+<td style="text-align:center">122</td>
+<td style="text-align:left">7A</td>
+<td style="text-align:left">z</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 1011</td>
+<td style="text-align:center">123</td>
+<td style="text-align:left">7B</td>
+<td style="text-align:left">{</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 1100</td>
+<td style="text-align:center">124</td>
+<td style="text-align:left">7C</td>
+<td style="text-align:left"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">0111 1101</td>
+<td style="text-align:center">125</td>
+<td style="text-align:left">7D</td>
+<td style="text-align:left">}</td>
+</tr>
+<tr>
+<td style="text-align:center">0111 1110</td>
+<td style="text-align:center">126</td>
+<td style="text-align:left">7E</td>
+<td style="text-align:left">~</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SCII（American Standard Code for Information Interchange，美国信息互换标准代码，ASCⅡ）是基于拉丁字母的一套电脑编码系统。它主要用于显示现代英语和其他西欧语言。它是现今最通用的单字节编码系统，并等同于国际标准ISO/IEC 646。&lt;br&gt;　　ASCII第一次以规范标准的型态发表是在1967年，最后一次更新则是在1986年，至今为止共定义了128个字符，其中33个字符无法显示（这是以现今操作系统为依归，但在DOS模式下可显示出一些诸如笑脸、扑克牌花式等8-bit符号），且这33个字符多数都已是陈废的控制字符，控制字符的用途主要是用来操控已经处理过的文字，在33个字符之外的是95个可显示的字符，包含用键盘敲下空白键所产生的空白字符也算1个可显示字符（显示为空白）。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="java笔记" scheme="https://meilong321.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MyBatis  ResultMap复杂映射</title>
+    <link href="https://meilong321.github.io/2017/09/17/MyBatis/"/>
+    <id>https://meilong321.github.io/2017/09/17/MyBatis/</id>
+    <published>2017-09-17T02:59:51.000Z</published>
+    <updated>2017-09-17T11:59:20.457Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MyBatis-ResultMap复杂映射"><a href="#MyBatis-ResultMap复杂映射" class="headerlink" title="MyBatis ResultMap复杂映射"></a>MyBatis ResultMap复杂映射</h1><p>&emsp;&emsp;MyBatis中在查询进行select映射的时候，返回类型可以用resultType，也可以用<br>resultMap。resultType是直接表示返回类型的,而resultMap则是对外部ResultMap的引用<br>但是resultType跟resultMap不能同时存在。<br><a id="more"></a><br>&emsp;&emsp;在MyBatis进行查询映射的时候，其实查询出来的每一个属性都是放在一个对应的Map里面的，其中键是属性名，值则是其对应的值。当提供的返回类型属性是resultType的时候，MyBatis会将Map里面的键值对取出赋给resultType所指定的对象对应的属性。所以其实MyBatis的每一个查询映射的返回类型都是ResultMap，只是当我们提供的返回类型属性是resultType的时候，MyBatis对自动的给我们把对应的值赋给resultType所指定对象的属性，但当这个对象中有自定义类型的属性时, Mybatis就无法自动装配这个属性了, 此时就需要用到resultMap了, Mybatis会根据我们配置的信息进行映射</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">"bookWhole"</span> <span class="attr">type</span>=<span class="string">"book"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">constructor</span>&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">idArg</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"book_id"</span> <span class="attr">javaType</span>=<span class="string">"int"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"bookName"</span> <span class="attr">column</span>=<span class="string">"bookName"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">constructor</span>&gt;</span> </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"publishPress"</span> <span class="attr">column</span>=<span class="string">"publishPress"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">priority</span>=<span class="string">"publishDate"</span> <span class="attr">column</span>=<span class="string">"publishDate"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">association</span> <span class="attr">property</span>=<span class="string">"type"</span> <span class="attr">javaType</span>=<span class="string">"bookType"</span> <span class="attr">column</span>=<span class="string">"bookType"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"type_id"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"typeName"</span> <span class="attr">column</span>=<span class="string">"typeName"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">association</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">collection</span> <span class="attr">property</span>=<span class="string">"authors"</span> <span class="attr">ofType</span>=<span class="string">"author"</span> <span class="attr">column</span>=<span class="string">"author"</span> &gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"author_id"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"name"</span> <span class="attr">column</span>=<span class="string">"author_name"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">collection</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="resultMap元素"><a href="#resultMap元素" class="headerlink" title="resultMap元素"></a>resultMap元素</h2><p>resultMap元素是复杂映射的根元素, 其id表示select查询中要配置的名称, type指定一个实体类</p>
+<h3 id="一-Constructor-元素"><a href="#一-Constructor-元素" class="headerlink" title="一. Constructor 元素"></a>一. Constructor 元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">constructor</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">idArg</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"book_id"</span> <span class="attr">javaType</span>=<span class="string">"int"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"bookName"</span> <span class="attr">column</span>=<span class="string">"bookName"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">constructor</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>实例化的时候通过构造器将结果集注入到类中<br>idArg : ID 参数; 将结果集标记为ID，以方便全局调用<br>arg : 注入构造器的结果集</p>
+<h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h4><ul>
+<li>property 映射数据库列的字段或属性。若 JavaBean 的属性名与给定的名称匹配，就会使用匹配的名字。否则，MyBatis 将搜索给定名称的字段。</li>
+<li>column 数据库的列名或者列标签别名。与传递给resultSet.getString(columnName)的参数名称相同。</li>
+<li>javaType 指定java类名。如果映射到一个JavaBean，MyBatis 通常会自行检测到。如果映射到一个HashMap，应该明确指定javaType。</li>
+<li>jdbcType 指定支持的JDBC。这个属性只在insert，update或delete 的时候针对允许空的列有用。JDBC 需要这项，但MyBatis 不需要。如果直接编写JDBC代码，在允许为空值的情况下需要指定这个类型。</li>
+<li>typeHandler 这个属性可以重写默认类型处理器。它的值可以是一个TypeHandler实现的完整类名，也可以是一个类型别名。</li>
+</ul>
+<h3 id="二-id-result-元素"><a href="#二-id-result-元素" class="headerlink" title="二. id, result 元素"></a>二. id, result 元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"type_id"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"typeName"</span> <span class="attr">column</span>=<span class="string">"typeName"</span>/&gt;</span></div></pre></td></tr></table></figure>
+<p> id对应表中的主键, result对应普通列. 两者的作用都是将数据库列映射到属性.<br> 虽然不使用id元素也不会影响映射结果, 但比较对象实例时id会作为结果集的标识属性, 能够提高性能, 尤其是应用缓存和嵌套结果映射的时候</p>
+<h4 id="属性-1"><a href="#属性-1" class="headerlink" title="属性"></a>属性</h4><p>id、result的属性效果和Constructor元素一样</p>
+<h3 id="三-Association元素"><a href="#三-Association元素" class="headerlink" title="三. Association元素"></a>三. Association元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">association</span> <span class="attr">property</span>=<span class="string">"type"</span> <span class="attr">javaType</span>=<span class="string">"bookType"</span> <span class="attr">column</span>=<span class="string">"bookType"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"type_id"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"typeName"</span> <span class="attr">column</span>=<span class="string">"typeName"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">association</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>&emsp;&emsp;Association元素 : 复杂类型联合;许多查询结果合成这个类型. 用来处理”多对一(many-to-one)”或”一对一(one-to-one)” 这类关系.<br>associations能引用自身,或者从其它地方引用</p>
+<h4 id="属性-2"><a href="#属性-2" class="headerlink" title="属性"></a>属性</h4><ul>
+<li>Association元素的包含了Constructor元素的所有属性, 同时也有自己特用的属性</li>
+<li>select 这个属性，通过ID引用另一个加载复杂类型的映射语句。从指定列属性中返回的值，将作为参数设置给目标select 语句。表格下方将有一个例子。注意：在处理组合键时，您可以使用column=”{prop1=col1,prop2=col2}”这样的语法，设置多个列名传入到嵌套语句。这就会把prop1和prop2设置到目标嵌套语句的参数对象中。</li>
+</ul>
+<h3 id="四-Collection元素"><a href="#四-Collection元素" class="headerlink" title="四. Collection元素"></a>四. Collection元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">collection</span> <span class="attr">property</span>=<span class="string">"authors"</span> <span class="attr">ofType</span>=<span class="string">"author"</span> <span class="attr">column</span>=<span class="string">"author"</span> &gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"author_id"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"name"</span> <span class="attr">column</span>=<span class="string">"author_name"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">collection</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>&emsp;&emsp;Collection元素的功能和Associations非常类似, 其主要用来处理”一对多(one-to-many)”或”多对多(many-to-many)”这类关系, 返回一个结果集.<br>Collenction也能引用自身, 或者从其他地方引用</p>
+<h4 id="属性-3"><a href="#属性-3" class="headerlink" title="属性"></a>属性</h4><ul>
+<li>Collection元素和Association元素的属性一样, 同时有自己的特有属性</li>
+<li>ofType 这个属性用来区分JavaBean(或字段)属性类型和集合包含的类型（类型明确下也可以省略）, 当使用反向查询select从另一个maper文件中取出数据时必须用ofType.</li>
+</ul>
+<h3 id="五-Discriminator元素"><a href="#五-Discriminator元素" class="headerlink" title="五. Discriminator元素"></a>五. Discriminator元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">"vehicleResult"</span> <span class="attr">type</span>=<span class="string">"Vehicle"</span>&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">”id”</span> <span class="attr">column</span>=<span class="string">"id"</span> /&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"vin"</span> <span class="attr">column</span>=<span class="string">"vin"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"year"</span> <span class="attr">column</span>=<span class="string">"year"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"make"</span> <span class="attr">column</span>=<span class="string">"make"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"model"</span> <span class="attr">column</span>=<span class="string">"model"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"color"</span> <span class="attr">column</span>=<span class="string">"color"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">discriminator</span> <span class="attr">javaType</span>=<span class="string">"int"</span> <span class="attr">column</span>=<span class="string">"vehicle_type"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">case</span> <span class="attr">value</span>=<span class="string">"1"</span> <span class="attr">resultMap</span>=<span class="string">"carResult"</span>/&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">case</span> <span class="attr">value</span>=<span class="string">"2"</span> <span class="attr">resultMap</span>=<span class="string">"truckResult"</span>/&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">case</span> <span class="attr">value</span>=<span class="string">"3"</span> <span class="attr">resultMap</span>=<span class="string">"vanResult"</span>/&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">case</span> <span class="attr">value</span>=<span class="string">"4"</span> <span class="attr">resultMap</span>=<span class="string">"suvResult"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;/<span class="name">discriminator</span>&gt;</span>  </div><div class="line"><span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>&emsp;&emsp;有时一条数据库查询会返回包括各种不同的数据类型的结果集。Discriminator（识别器）元素被设计来处理这种情况，以及其它像类继承层次情况。识别器类似java中的switch语句。<br>&emsp;&emsp;Discriminator定义要指定column和javaType属性。列是MyBatis将要取出进行比较的值，javaType用来确定适当的测试是否正确运行</p>
+<h4 id="属性-4"><a href="#属性-4" class="headerlink" title="属性"></a>属性</h4><ul>
+<li>javaType 用来确定适当的测试是否正确运行</li>
+<li>column 指定MyBatis将要进行比较的列</li>
+</ul>
+<h4 id="case元素"><a href="#case元素" class="headerlink" title="case元素"></a>case元素</h4><p>&emsp;&emsp;discriminator的子元素, MyBatis会从结果集中取出每条记录, 然后比较它的vehicle_type的值. 如果匹配任何 discriminator 中 case 的 value 值 , 它将使用case指定的resultMap, 而其它的case的resultMap将会被忽略 ( 除非使用extended ), 如果没有匹配到任何case，MyBatis只是简单的使用定义在discriminator块外面的resultMap. </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;MyBatis-ResultMap复杂映射&quot;&gt;&lt;a href=&quot;#MyBatis-ResultMap复杂映射&quot; class=&quot;headerlink&quot; title=&quot;MyBatis ResultMap复杂映射&quot;&gt;&lt;/a&gt;MyBatis ResultMap复杂映射&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;MyBatis中在查询进行select映射的时候，返回类型可以用resultType，也可以用&lt;br&gt;resultMap。resultType是直接表示返回类型的,而resultMap则是对外部ResultMap的引用&lt;br&gt;但是resultType跟resultMap不能同时存在。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="MyBatis" scheme="https://meilong321.github.io/categories/MyBatis/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>commons-fileupload</title>
@@ -97,42 +1033,6 @@
     </summary>
     
       <category term="java笔记" scheme="https://meilong321.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>nihao</title>
-    <link href="https://meilong321.github.io/2017/07/01/nihao/"/>
-    <id>https://meilong321.github.io/2017/07/01/nihao/</id>
-    <published>2017-07-01T10:30:38.000Z</published>
-    <updated>2017-07-02T06:16:42.228Z</updated>
-    
-    <content type="html"><![CDATA[<p>欢迎来到我的博客</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;欢迎来到我的博客&lt;/p&gt;
-
-    
-    </summary>
-    
-      <category term="java笔记" scheme="https://meilong321.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hello word</title>
-    <link href="https://meilong321.github.io/2017/07/01/hello-word/"/>
-    <id>https://meilong321.github.io/2017/07/01/hello-word/</id>
-    <published>2017-07-01T09:28:35.000Z</published>
-    <updated>2017-07-02T07:57:46.749Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
     
     
   </entry>
