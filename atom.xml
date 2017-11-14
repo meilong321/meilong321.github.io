@@ -4,23 +4,49 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://meilong321.github.io/"/>
-  <updated>2017-09-17T12:38:09.782Z</updated>
-  <id>https://meilong321.github.io/</id>
+  <link href="https://meilonme.github.io/"/>
+  <updated>2017-11-14T06:18:46.251Z</updated>
+  <id>https://meilonme.github.io/</id>
   
   <author>
-    <name>melon</name>
+    <name>meilon</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>IntelliJ IDEA 常用快捷键</title>
+    <link href="https://meilonme.github.io/2017/09/17/IDEAKeyMap/"/>
+    <id>https://meilonme.github.io/2017/09/17/IDEAKeyMap/</id>
+    <published>2017-09-17T12:34:19.000Z</published>
+    <updated>2017-11-14T06:18:46.251Z</updated>
+    
+    <content type="html"><![CDATA[<p>IntelliJ IDEA 常用快捷键<br><a id="more"></a></p>
+<h2 id="查询快捷键"><a href="#查询快捷键" class="headerlink" title="查询快捷键"></a>查询快捷键</h2><p>CTRL+N   查找类<br>CTRL+SHIFT+N  查找文件<br>CTRL+SHIFT+ALT+N 查找类中的方法或变量<br>CIRL+B   找变量的来源<br>CTRL+ALT+B  找所有的子类<br>CTRL+SHIFT+B  找变量的类<br>CTRL+G   定位行<br>CTRL+F   在当前窗口查找文本<br>CTRL+SHIFT+F  在指定窗口查找文本<br>CTRL+R   在当前窗口替换文本<br>CTRL+SHIFT+R  在指定窗口替换文本<br>ALT+SHIFT+C  查找修改的文件<br>CTRL+E   最近打开的文件<br>F3   向下查找关键字出现位置<br>SHIFT+F3  向上一个关键字出现位置<br>F4   查找变量来源<br>CTRL+ALT+F7  选中的字符查找工程出现的地方<br>CTRL+SHIFT+O  弹出显示查找内容</p>
+<h2 id="自动代码"><a href="#自动代码" class="headerlink" title="自动代码"></a>自动代码</h2><p>ALT+回车  导入包,自动修正<br>CTRL+ALT+L  格式化代码<br>CTRL+ALT+I  自动缩进<br>CTRL+ALT+O  优化导入的类和包<br>ALT+INSERT  生成代码(如GET,SET方法,构造函数等)<br>CTRL+E或者ALT+SHIFT+C 最近更改的代码<br>CTRL+SHIFT+SPACE 自动补全代码<br>CTRL+空格  代码提示 (和系统输入法冲突，请在Settings-&gt;Keymap-&gt;mainmenu -&gt; code -&gt;Completion-&gt;basic，右键添加自己的快捷键)<br>CTRL+ALT+SPACE  类名或接口名提示<br>CTRL+P   方法参数提示<br>CTRL+J   自动代码<br>CTRL+ALT+T  把选中的代码放在 TRY{} IF{}ELSE{} 里</p>
+<h2 id="复制快捷方式"><a href="#复制快捷方式" class="headerlink" title="复制快捷方式"></a>复制快捷方式</h2><p>F5   拷贝文件快捷方式<br>CTRL+D   复制行<br>CTRL+X   剪切,删除行<br>CTRL+SHIFT+V  可以复制多个文本</p>
+<h2 id="高亮"><a href="#高亮" class="headerlink" title="高亮"></a>高亮</h2><p>CTRL+F   选中的文字,高亮显示上下跳到下一个或者上一个<br>F2 或SHIFT+F2  高亮错误或警告快速定位<br>CTRL+SHIFT+F7  高亮显示多个关键字.</p>
+<h2 id="其他快捷方式"><a href="#其他快捷方式" class="headerlink" title="其他快捷方式"></a>其他快捷方式</h2><p>CIRL+U   大小写切换<br>CTRL+Z   倒退<br>CTRL+SHIFT+Z  向前<br>CTRL+ALT+F12  资源管理器打开文件夹在WINDOW窗口快速定位到文件或者文件夹的位置<br>ALT+F1   查找文件所在目录位置<br>SHIFT+ALT+INSERT 竖编辑模式<br>CTRL+/   注释//<br>CTRL+SHIFT+/  注释<br>CTRL+W   选中代码，连续按会有其他效果<br>CTRL+B   快速打开光标处的类或方法<br>ALT+ ←/→  切换代码视图<br>CTRL+ALT ←/→  返回上次编辑的位置<br>ALT+ ↑/↓  在方法间快速移动定位<br>SHIFT+F6  重构-重命名<br>CTRL+H   显示类结构图<br>CTRL+Q   显示注释文档<br>ALT+1   快速打开或隐藏工程面板<br>CTRL+SHIFT+UP/DOWN 代码向上/下移动。<br>CTRL+UP/DOWN  光标跳转到第一行或最后一行下<br>ESC   光标返回编辑框<br>SHIFT+ESC  光标返回编辑框,关闭无用的窗口<br>F1   帮助 (不建议使用，很慢)<br>CTRL+F4   关闭当前打开文件</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;IntelliJ IDEA 常用快捷键&lt;br&gt;
+    
+    </summary>
+    
+      <category term="IDE" scheme="https://meilonme.github.io/categories/IDE/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>MyBatis  ResultMap复杂映射</title>
-    <link href="https://meilong321.github.io/2017/09/17/resultMap/"/>
-    <id>https://meilong321.github.io/2017/09/17/resultMap/</id>
+    <link href="https://meilonme.github.io/2017/09/17/resultMap/"/>
+    <id>https://meilonme.github.io/2017/09/17/resultMap/</id>
     <published>2017-09-17T02:59:51.000Z</published>
-    <updated>2017-09-17T12:38:09.782Z</updated>
+    <updated>2017-09-17T12:38:09.783Z</updated>
     
     <content type="html"><![CDATA[<p>&emsp;&emsp;MyBatis中在查询进行select映射的时候，返回类型可以用resultType，也可以用<br>resultMap。resultType是直接表示返回类型的,而resultMap则是对外部ResultMap的引用<br>但是resultType跟resultMap不能同时存在。<br><a id="more"></a><br>&emsp;&emsp;在MyBatis进行查询映射的时候，其实查询出来的每一个属性都是放在一个对应的Map里面的，其中键是属性名，值则是其对应的值。当提供的返回类型属性是resultType的时候，MyBatis会将Map里面的键值对取出赋给resultType所指定的对象对应的属性。所以其实MyBatis的每一个查询映射的返回类型都是ResultMap，只是当我们提供的返回类型属性是resultType的时候，MyBatis对自动的给我们把对应的值赋给resultType所指定对象的属性，但当这个对象中有自定义类型的属性时, Mybatis就无法自动装配这个属性了, 此时就需要用到resultMap了, Mybatis会根据我们配置的信息进行映射</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">"bookWhole"</span> <span class="attr">type</span>=<span class="string">"book"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">constructor</span>&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">idArg</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"book_id"</span> <span class="attr">javaType</span>=<span class="string">"int"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"bookName"</span> <span class="attr">column</span>=<span class="string">"bookName"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">constructor</span>&gt;</span> </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"publishPress"</span> <span class="attr">column</span>=<span class="string">"publishPress"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">priority</span>=<span class="string">"publishDate"</span> <span class="attr">column</span>=<span class="string">"publishDate"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">association</span> <span class="attr">property</span>=<span class="string">"type"</span> <span class="attr">javaType</span>=<span class="string">"bookType"</span> <span class="attr">column</span>=<span class="string">"bookType"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"type_id"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"typeName"</span> <span class="attr">column</span>=<span class="string">"typeName"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">association</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">collection</span> <span class="attr">property</span>=<span class="string">"authors"</span> <span class="attr">ofType</span>=<span class="string">"author"</span> <span class="attr">column</span>=<span class="string">"author"</span> &gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"author_id"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"name"</span> <span class="attr">column</span>=<span class="string">"author_name"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">collection</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></div></pre></td></tr></table></figure>
@@ -64,17 +90,17 @@
     
     </summary>
     
-      <category term="MyBatis" scheme="https://meilong321.github.io/categories/MyBatis/"/>
+      <category term="MyBatis" scheme="https://meilonme.github.io/categories/MyBatis/"/>
     
     
   </entry>
   
   <entry>
     <title>commons-fileupload</title>
-    <link href="https://meilong321.github.io/2017/07/05/commons/"/>
-    <id>https://meilong321.github.io/2017/07/05/commons/</id>
+    <link href="https://meilonme.github.io/2017/07/05/commons/"/>
+    <id>https://meilonme.github.io/2017/07/05/commons/</id>
     <published>2017-07-05T05:48:31.000Z</published>
-    <updated>2017-07-05T11:50:41.003Z</updated>
+    <updated>2017-07-05T11:50:41.004Z</updated>
     
     <content type="html"><![CDATA[<h2 id="FileItem"><a href="#FileItem" class="headerlink" title="FileItem"></a>FileItem</h2><p>  FileItem 是一个接口, 定义了用于处理表单内容及文件内容的方法.<br>  每个表单中的单字段元素都会被封装成一个FileItem对象<br><a id="more"></a></p>
 <h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><ul>
@@ -109,15 +135,15 @@
     
     </summary>
     
-      <category term="java笔记" scheme="https://meilong321.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
+      <category term="java笔记" scheme="https://meilonme.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>jsp session</title>
-    <link href="https://meilong321.github.io/2017/07/01/jsp%20session/"/>
-    <id>https://meilong321.github.io/2017/07/01/jsp session/</id>
+    <link href="https://meilonme.github.io/2017/07/01/jsp%20session/"/>
+    <id>https://meilonme.github.io/2017/07/01/jsp session/</id>
     <published>2017-07-01T14:28:35.000Z</published>
     <updated>2017-07-02T06:31:01.499Z</updated>
     
@@ -150,15 +176,15 @@
     
     </summary>
     
-      <category term="java笔记" scheme="https://meilong321.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
+      <category term="java笔记" scheme="https://meilonme.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>ASCII码对照表</title>
-    <link href="https://meilong321.github.io/2017/01/17/ASCII/"/>
-    <id>https://meilong321.github.io/2017/01/17/ASCII/</id>
+    <link href="https://meilonme.github.io/2017/01/17/ASCII/"/>
+    <id>https://meilonme.github.io/2017/01/17/ASCII/</id>
     <published>2017-01-17T07:03:27.000Z</published>
     <updated>2017-09-17T14:06:58.138Z</updated>
     
@@ -1032,22 +1058,22 @@
     
     </summary>
     
-      <category term="java笔记" scheme="https://meilong321.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
+      <category term="java笔记" scheme="https://meilonme.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
-    <title>MyEclipse</title>
-    <link href="https://meilong321.github.io/2016/09/17/MyEclipse/"/>
-    <id>https://meilong321.github.io/2016/09/17/MyEclipse/</id>
+    <title>MyEclipse 快捷键整理</title>
+    <link href="https://meilonme.github.io/2016/09/17/MyEclipse/"/>
+    <id>https://meilonme.github.io/2016/09/17/MyEclipse/</id>
     <published>2016-09-17T12:34:19.000Z</published>
-    <updated>2017-09-17T14:06:32.956Z</updated>
+    <updated>2017-09-17T14:19:33.004Z</updated>
     
     <content type="html"><![CDATA[<p>MyEclipse是应用非常广泛的一个IDE之一,  熟练的使用IDE能够大大提高程序员的开发效率.<br>熟练使用IDE的精髓就在于快捷键的使用了.<br><a id="more"></a></p>
 <h4 id="常用编辑器快捷键"><a href="#常用编辑器快捷键" class="headerlink" title="常用编辑器快捷键"></a>常用编辑器快捷键</h4><p>【Ctrl+C】：复制<br>【Ctrl+X】：剪切<br>【Ctrl+V】：粘贴<br>【Ctrl+S】：保存文件<br>【Ctrl+Z】：撤销<br>【Ctrl+Y】：重复<br>【Ctrl+F】：查找/替换</p>
 <h4 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h4><p>【Ctrl+P】 : 打印<br>【Ctrl+F4】 : 关闭<br>【Ctrl+Shift+S】 : 全部保存<br>【Ctrl+Shift+F4】 : 全部关闭<br>【Alt+Enter 】 : 显示当前选择资源(工程,or 文件)的属性<br>【Ctrl+N】 : 新建 </p>
-<h4 id="查找和定位快捷键"><a href="#查找和定位快捷键" class="headerlink" title="查找和定位快捷键"></a>查找和定位快捷键</h4><p>【Ctrl+K】、【Ctrl++Shift+K】: 快速向下和向上查找选定的内容，从此不再需要用鼠标单击查找对话框了。<br>【Ctrl+Shift+T】 : 查找工作空间（Workspace）构建路径中的可找到Java类文件，不要为找不到类而痛苦，而且可以使用“*”、“？”等通配符。<br>【Ctrl+Shift+R】: 和【Ctrl+Shift+T】对应，查找工作空间（Workspace）中的所有文件（包括Java文件），也可以使用通配符。<br>【Ctrl+Shift+G】 : 查找类、方法和属性的引用 . 非常实用的快捷键 , 例如要修改引用某个方法的代码 , 可以通过【Ctrl+Shift+G】快捷键迅速定位所有引用此方法的位置 .<br>【Ctrl+Shift+O】 : 快速生成import，当从网上拷贝一段程序后，不知道如何import进所调用的类，试试【Ctrl+Shift+O】快捷键，一定会有惊喜。<br>【Ctrl+Shift+F】 : 格式化代码 , 选定一段代码后按此快捷键可以格式化这段代码, 如果不选定代码则默认格式化当前文件（Java文件）。<br>【ALT+Shift+W】 : 查找当前文件所在项目中的路径, 可以快速定位浏览器视图的位置, 如果想查找某个文件所在的包时, 此快捷键非常有用（特别在比较大的项目中）。<br>【Ctrl+L】 : 定位到当前编辑器的某一行，对非Java文件也有效。<br>【Alt+←】、【Alt+→】 : 后退历史记录和前进历史记录, 在跟踪代码时非常有用, 用户可能查找了几个有关联的地方, 但可能记不清楚了, 可以通过这两个快捷键定位查找的顺序。<br>【F3】 : 快速定位光标位置的某个类、方法和属性。<br>【F4】 : 显示类的继承关系，并打开类继承视图。<br>全局 出现在文件中 Ctrl+Shift+U<br>全局 打开搜索对话框 Ctrl+H<br>全局 工作区中的声明 Ctrl+G<br>全局 工作区中的引用 Ctrl+Shift+G </p>
+<h4 id="查找和定位快捷键"><a href="#查找和定位快捷键" class="headerlink" title="查找和定位快捷键"></a>查找和定位快捷键</h4><p>【Ctrl+H】 :  打开搜索对话框<br>【Ctrl+G】 :  工作区中的声明<br>【Ctrl+L】 :  定位到当前编辑器的某一行，对非Java文件也有效。<br>【Ctrl+K】、【Ctrl++Shift+K】: 快速向下和向上查找选定的内容，从此不再需要用鼠标单击查找对话框了。<br>【Ctrl+Shift+T】 : 查找工作空间（Workspace）构建路径中的可找到Java类文件，不要为找不到类而痛苦，而且可以使用“*”、“？”等通配符。<br>【Ctrl+Shift+R】 : 和【Ctrl+Shift+T】对应，查找工作空间（Workspace）中的所有文件（包括Java文件），也可以使用通配符。<br>【Ctrl+Shift+G】 : 查找类、方法和属性的引用 . 非常实用的快捷键 , 例如要修改引用某个方法的代码 , 可以通过【Ctrl+Shift+G】快捷键迅速定位所有引用此方法的位置 .<br>【Ctrl+Shift+O】 : 快速生成import，当从网上拷贝一段程序后，不知道如何import进所调用的类，试试【Ctrl+Shift+O】快捷键，一定会有惊喜。<br>【Ctrl+Shift+F】 : 格式化代码 , 选定一段代码后按此快捷键可以格式化这段代码, 如果不选定代码则默认格式化当前文件（Java文件）。<br>【Ctrl+Shift+U】 : 出现在文件中<br>【Ctrl+Shift+G】 : 工作区中的引用<br>【ALT+Shift+W】 : 查找当前文件所在项目中的路径, 可以快速定位浏览器视图的位置, 如果想查找某个文件所在的包时, 此快捷键非常有用（特别在比较大的项目中）。<br>【Alt+←】、【Alt+→】 : 后退历史记录和前进历史记录, 在跟踪代码时非常有用, 用户可能查找了几个有关联的地方, 但可能记不清楚了, 可以通过这两个快捷键定位查找的顺序。</p>
 <h4 id="调试快捷键"><a href="#调试快捷键" class="headerlink" title="调试快捷键"></a>调试快捷键</h4><p>【F5】：单步跳入，当程序执行到某方法时，可以按【F5】键跟踪到方法中。<br>【F6】：单步跳过, 单步执行程序。<br>【F7】：单步返回, 执行完方法，返回到调用此方法的后一条语句。<br>【F8】：继续执行，到下一个断点或程序结束。<br>【F11】：调试最后一次执行的程序。<br>【Ctrl+F5 】 : 单步跳入选择<br>【Shift+F5 】 : 使用过滤器单步执行<br>【Ctrl+F11】：运行最后一次执行的程序。<br>【Ctrl+D】 : 显示<br>【Ctrl+R】 : 运行至行<br>【Ctrl+U 】 : 执行<br>【Ctrl+Shift+B】：在当前行添加/去除断点。 </p>
 <h4 id="视图快捷键"><a href="#视图快捷键" class="headerlink" title="视图快捷键"></a>视图快捷键</h4><p>【F3】 :  打开声明<br>【F4】 :  打开类型层次结构<br>【Alt+-】 : 显示系统菜单<br>【Alt+←】 :  前一个编辑的页面<br>【Alt+→ 】 : 后一个编辑的页面(针对上面那条来说)<br>【Ctrl+=】 :  放大字体<br>【Ctrl+-】 :  缩小字体<br>【Ctrl+↑】 :  向上滚动<br>【Ctrl+↓】 :  向下滚动<br>【Ctrl+m】 : 最大化当前的Edit或View (再按则恢复)<br>【Ctrl+O】 :  快速显示 OutLine, 显示类中方法和属性的大纲，能快速定位类中的方法和属性。<br>【Ctrl+T】 :  快速显示当前类的继承结构<br>【Ctrl+W】 :  关闭当前Editer<br>【Ctrl+E】 :  快速显示当前Editer的下拉列表(如果当前页面没有显示的用黑体表示)<br>【Ctrl+F3】 :  打开结构<br>【Ctrl+F6】：切换到下一个编辑器。<br>【Ctrl+F7】：切换到下一个视图。<br>【Ctrl+F8】：切换到下一个透视图。<br>【Ctrl+F10】 : 显示视图菜单<br>【Ctrl+Shift+E】 :  显示管理当前打开的所有的View的管理器(可以选择关闭,激活等操作)<br>【Ctrl+Shift+T】 :  打开类型<br>【Ctrl+Shift+R】 :  打开资源<br>【Ctrl+Shift+F4】 :  关闭所有打开的Editer<br>【Ctrl+Shift+F6】： 切换到上一个编辑器。<br>【Ctrl+Shift+F7】： 切换到上一个视图。<br>【Ctrl+Shift+F8】： 切换到上一个透视图。<br>【Shift+F2】 :  打开外部javadoc</p>
 <h4 id="编辑相关快捷键"><a href="#编辑相关快捷键" class="headerlink" title="编辑相关快捷键"></a>编辑相关快捷键</h4><p>【F2】 : 显示工具提示描述<br>【Insert】 :  改写切换<br>【ALT+/】 : 代码提示<br>【Alt+↓】 :  移动当前行到下一行<br>【Alt+↑】 :  移动当前行到上一行<br>【Alt+Shift+↑】 选择封装元素(扩大范围)<br>【Alt+Shift+↓】 选择封装元素(缩小范围)<br>【Alt+Shift+←】 选择上一个元素<br>【Alt+Shift+→】选择下一个元素<br>【Ctrl+1】 :  快速修复(最经典的快捷键,就不用多说了)<br>【Ctrl+/】 : 快速添加注释 , 再次使用取消注释<br>【Ctrl + Shift + /】 : 添加多行注释<br>【Ctrl + Shift + \】 : 取消多行注释<br>【Ctrl + Shift + c】 : 添加 or 取消单行注释, 支持范围更大<br>【Ctrl+D】 : 删除当前行<br>【Ctrl+Q】 :  定位到最后编辑的地方<br>【Ctrl+J 】 :  正向增量查找(按下Ctrl+J后,你所输入的每个字母编辑器都提供快速匹配定位到某个单词,如果没有,则在stutes line中显示没有找到)<br>【Ctrl+L 】 :  定位在某行 (对于程序超过100的人就有福音了)<br>【Ctrl+K 】 :  参照选中的Word快速定位到下一个<br>【Ctrl+M】 : 窗口最大化和还原，用户在窗口中进行操作时，总会觉得当前窗口小（尤其在编写代码时），现在好了，试试【Ctrl+M】快捷键。<br>【Ctrl+/(小键盘)】 :  折叠 or 展开当前类中的所有代码<br>【Ctrl+Alt+↓】 :  复制当前行到下一行(复制增加)<br>【Ctrl+Alt+↑】 :  复制当前行到上一行(复制增加)<br>【Ctrl+Shift+K】 :  参照选中的Word快速定位到上一个<br>【Ctrl+Shift+J】 :  反向增量查找(和上条相同,只不过是从后往前查)<br>【Ctrl+Shift+X】 :  把当前选中的文本全部变为大写<br>【Ctrl+Shift+Y】 :  把当前选中的文本全部变为小写<br>【Ctrl+Shift+F 】 : 格式化当前代码<br>【Ctrl+Shift+P】 :  定位到对于的匹配符(譬如{}) (从前面定位后面时,光标要在匹配符里面,后面到前面,则反之)<br>【Shift+Enter】 :  在当前行的下一行插入空行(这时鼠标可以在当前行的任一位置,不一定是最后)<br>【Shift+Ctrl+Enter】 :  在当前行的上一行插入空行(原理同上条)</p>
@@ -1060,7 +1086,7 @@
     
     </summary>
     
-      <category term="IDE" scheme="https://meilong321.github.io/categories/IDE/"/>
+      <category term="IDE" scheme="https://meilonme.github.io/categories/IDE/"/>
     
     
   </entry>
