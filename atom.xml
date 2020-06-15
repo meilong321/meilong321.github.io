@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://meilonme.github.io/"/>
-  <updated>2017-11-14T06:18:46.251Z</updated>
+  <updated>2020-06-15T02:27:31.609Z</updated>
   <id>https://meilonme.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://meilonme.github.io/2017/09/17/IDEAKeyMap/"/>
     <id>https://meilonme.github.io/2017/09/17/IDEAKeyMap/</id>
     <published>2017-09-17T12:34:19.000Z</published>
-    <updated>2017-11-14T06:18:46.251Z</updated>
+    <updated>2020-06-15T02:27:31.609Z</updated>
     
     <content type="html"><![CDATA[<p>IntelliJ IDEA 常用快捷键<br><a id="more"></a></p>
 <h2 id="查询快捷键"><a href="#查询快捷键" class="headerlink" title="查询快捷键"></a>查询快捷键</h2><p>CTRL+N   查找类<br>CTRL+SHIFT+N  查找文件<br>CTRL+SHIFT+ALT+N 查找类中的方法或变量<br>CIRL+B   找变量的来源<br>CTRL+ALT+B  找所有的子类<br>CTRL+SHIFT+B  找变量的类<br>CTRL+G   定位行<br>CTRL+F   在当前窗口查找文本<br>CTRL+SHIFT+F  在指定窗口查找文本<br>CTRL+R   在当前窗口替换文本<br>CTRL+SHIFT+R  在指定窗口替换文本<br>ALT+SHIFT+C  查找修改的文件<br>CTRL+E   最近打开的文件<br>F3   向下查找关键字出现位置<br>SHIFT+F3  向上一个关键字出现位置<br>F4   查找变量来源<br>CTRL+ALT+F7  选中的字符查找工程出现的地方<br>CTRL+SHIFT+O  弹出显示查找内容</p>
@@ -42,151 +42,11 @@
   </entry>
   
   <entry>
-    <title>MyBatis  ResultMap复杂映射</title>
-    <link href="https://meilonme.github.io/2017/09/17/resultMap/"/>
-    <id>https://meilonme.github.io/2017/09/17/resultMap/</id>
-    <published>2017-09-17T02:59:51.000Z</published>
-    <updated>2017-09-17T12:38:09.783Z</updated>
-    
-    <content type="html"><![CDATA[<p>&emsp;&emsp;MyBatis中在查询进行select映射的时候，返回类型可以用resultType，也可以用<br>resultMap。resultType是直接表示返回类型的,而resultMap则是对外部ResultMap的引用<br>但是resultType跟resultMap不能同时存在。<br><a id="more"></a><br>&emsp;&emsp;在MyBatis进行查询映射的时候，其实查询出来的每一个属性都是放在一个对应的Map里面的，其中键是属性名，值则是其对应的值。当提供的返回类型属性是resultType的时候，MyBatis会将Map里面的键值对取出赋给resultType所指定的对象对应的属性。所以其实MyBatis的每一个查询映射的返回类型都是ResultMap，只是当我们提供的返回类型属性是resultType的时候，MyBatis对自动的给我们把对应的值赋给resultType所指定对象的属性，但当这个对象中有自定义类型的属性时, Mybatis就无法自动装配这个属性了, 此时就需要用到resultMap了, Mybatis会根据我们配置的信息进行映射</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">"bookWhole"</span> <span class="attr">type</span>=<span class="string">"book"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">constructor</span>&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">idArg</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"book_id"</span> <span class="attr">javaType</span>=<span class="string">"int"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"bookName"</span> <span class="attr">column</span>=<span class="string">"bookName"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">constructor</span>&gt;</span> </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"publishPress"</span> <span class="attr">column</span>=<span class="string">"publishPress"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">priority</span>=<span class="string">"publishDate"</span> <span class="attr">column</span>=<span class="string">"publishDate"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">association</span> <span class="attr">property</span>=<span class="string">"type"</span> <span class="attr">javaType</span>=<span class="string">"bookType"</span> <span class="attr">column</span>=<span class="string">"bookType"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"type_id"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"typeName"</span> <span class="attr">column</span>=<span class="string">"typeName"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">association</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">collection</span> <span class="attr">property</span>=<span class="string">"authors"</span> <span class="attr">ofType</span>=<span class="string">"author"</span> <span class="attr">column</span>=<span class="string">"author"</span> &gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"author_id"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"name"</span> <span class="attr">column</span>=<span class="string">"author_name"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">collection</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="resultMap元素"><a href="#resultMap元素" class="headerlink" title="resultMap元素"></a>resultMap元素</h2><p>resultMap元素是复杂映射的根元素, 其id表示select查询中要配置的名称, type指定一个实体类</p>
-<h3 id="一-Constructor-元素"><a href="#一-Constructor-元素" class="headerlink" title="一. Constructor 元素"></a>一. Constructor 元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">constructor</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">idArg</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"book_id"</span> <span class="attr">javaType</span>=<span class="string">"int"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"bookName"</span> <span class="attr">column</span>=<span class="string">"bookName"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">constructor</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>实例化的时候通过构造器将结果集注入到类中<br>idArg : ID 参数; 将结果集标记为ID，以方便全局调用<br>arg : 注入构造器的结果集</p>
-<h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h4><ul>
-<li>property 映射数据库列的字段或属性。若 JavaBean 的属性名与给定的名称匹配，就会使用匹配的名字。否则，MyBatis 将搜索给定名称的字段。</li>
-<li>column 数据库的列名或者列标签别名。与传递给resultSet.getString(columnName)的参数名称相同。</li>
-<li>javaType 指定java类名。如果映射到一个JavaBean，MyBatis 通常会自行检测到。如果映射到一个HashMap，应该明确指定javaType。</li>
-<li>jdbcType 指定支持的JDBC。这个属性只在insert，update或delete 的时候针对允许空的列有用。JDBC 需要这项，但MyBatis 不需要。如果直接编写JDBC代码，在允许为空值的情况下需要指定这个类型。</li>
-<li>typeHandler 这个属性可以重写默认类型处理器。它的值可以是一个TypeHandler实现的完整类名，也可以是一个类型别名。</li>
-</ul>
-<h3 id="二-id-result-元素"><a href="#二-id-result-元素" class="headerlink" title="二. id, result 元素"></a>二. id, result 元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"type_id"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"typeName"</span> <span class="attr">column</span>=<span class="string">"typeName"</span>/&gt;</span></div></pre></td></tr></table></figure>
-<p> id对应表中的主键, result对应普通列. 两者的作用都是将数据库列映射到属性.<br> 虽然不使用id元素也不会影响映射结果, 但比较对象实例时id会作为结果集的标识属性, 能够提高性能, 尤其是应用缓存和嵌套结果映射的时候</p>
-<h4 id="属性-1"><a href="#属性-1" class="headerlink" title="属性"></a>属性</h4><p>id、result的属性效果和Constructor元素一样</p>
-<h3 id="三-Association元素"><a href="#三-Association元素" class="headerlink" title="三. Association元素"></a>三. Association元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">association</span> <span class="attr">property</span>=<span class="string">"type"</span> <span class="attr">javaType</span>=<span class="string">"bookType"</span> <span class="attr">column</span>=<span class="string">"bookType"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"type_id"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"typeName"</span> <span class="attr">column</span>=<span class="string">"typeName"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">association</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>&emsp;&emsp;Association元素 : 复杂类型联合;许多查询结果合成这个类型. 用来处理”多对一(many-to-one)”或”一对一(one-to-one)” 这类关系.<br>associations能引用自身,或者从其它地方引用</p>
-<h4 id="属性-2"><a href="#属性-2" class="headerlink" title="属性"></a>属性</h4><ul>
-<li>Association元素的包含了Constructor元素的所有属性, 同时也有自己特用的属性</li>
-<li>select 这个属性，通过ID引用另一个加载复杂类型的映射语句。从指定列属性中返回的值，将作为参数设置给目标select 语句。表格下方将有一个例子。注意：在处理组合键时，您可以使用column=”{prop1=col1,prop2=col2}”这样的语法，设置多个列名传入到嵌套语句。这就会把prop1和prop2设置到目标嵌套语句的参数对象中。</li>
-</ul>
-<h3 id="四-Collection元素"><a href="#四-Collection元素" class="headerlink" title="四. Collection元素"></a>四. Collection元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">collection</span> <span class="attr">property</span>=<span class="string">"authors"</span> <span class="attr">ofType</span>=<span class="string">"author"</span> <span class="attr">column</span>=<span class="string">"author"</span> &gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"author_id"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"name"</span> <span class="attr">column</span>=<span class="string">"author_name"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">collection</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>&emsp;&emsp;Collection元素的功能和Associations非常类似, 其主要用来处理”一对多(one-to-many)”或”多对多(many-to-many)”这类关系, 返回一个结果集.<br>Collenction也能引用自身, 或者从其他地方引用</p>
-<h4 id="属性-3"><a href="#属性-3" class="headerlink" title="属性"></a>属性</h4><ul>
-<li>Collection元素和Association元素的属性一样, 同时有自己的特有属性</li>
-<li>ofType 这个属性用来区分JavaBean(或字段)属性类型和集合包含的类型（类型明确下也可以省略）, 当使用反向查询select从另一个maper文件中取出数据时必须用ofType.</li>
-</ul>
-<h3 id="五-Discriminator元素"><a href="#五-Discriminator元素" class="headerlink" title="五. Discriminator元素"></a>五. Discriminator元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">"vehicleResult"</span> <span class="attr">type</span>=<span class="string">"Vehicle"</span>&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">”id”</span> <span class="attr">column</span>=<span class="string">"id"</span> /&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"vin"</span> <span class="attr">column</span>=<span class="string">"vin"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"year"</span> <span class="attr">column</span>=<span class="string">"year"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"make"</span> <span class="attr">column</span>=<span class="string">"make"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"model"</span> <span class="attr">column</span>=<span class="string">"model"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"color"</span> <span class="attr">column</span>=<span class="string">"color"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">discriminator</span> <span class="attr">javaType</span>=<span class="string">"int"</span> <span class="attr">column</span>=<span class="string">"vehicle_type"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">case</span> <span class="attr">value</span>=<span class="string">"1"</span> <span class="attr">resultMap</span>=<span class="string">"carResult"</span>/&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">case</span> <span class="attr">value</span>=<span class="string">"2"</span> <span class="attr">resultMap</span>=<span class="string">"truckResult"</span>/&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">case</span> <span class="attr">value</span>=<span class="string">"3"</span> <span class="attr">resultMap</span>=<span class="string">"vanResult"</span>/&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">case</span> <span class="attr">value</span>=<span class="string">"4"</span> <span class="attr">resultMap</span>=<span class="string">"suvResult"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;/<span class="name">discriminator</span>&gt;</span>  </div><div class="line"><span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>&emsp;&emsp;有时一条数据库查询会返回包括各种不同的数据类型的结果集。Discriminator（识别器）元素被设计来处理这种情况，以及其它像类继承层次情况。识别器类似java中的switch语句。<br>&emsp;&emsp;Discriminator定义要指定column和javaType属性。列是MyBatis将要取出进行比较的值，javaType用来确定适当的测试是否正确运行</p>
-<h4 id="属性-4"><a href="#属性-4" class="headerlink" title="属性"></a>属性</h4><ul>
-<li>javaType 用来确定适当的测试是否正确运行</li>
-<li>column 指定MyBatis将要进行比较的列</li>
-</ul>
-<h4 id="case元素"><a href="#case元素" class="headerlink" title="case元素"></a>case元素</h4><p>&emsp;&emsp;discriminator的子元素, MyBatis会从结果集中取出每条记录, 然后比较它的vehicle_type的值. 如果匹配任何 discriminator 中 case 的 value 值 , 它将使用case指定的resultMap, 而其它的case的resultMap将会被忽略 ( 除非使用extended ), 如果没有匹配到任何case，MyBatis只是简单的使用定义在discriminator块外面的resultMap. </p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&amp;emsp;&amp;emsp;MyBatis中在查询进行select映射的时候，返回类型可以用resultType，也可以用&lt;br&gt;resultMap。resultType是直接表示返回类型的,而resultMap则是对外部ResultMap的引用&lt;br&gt;但是resultType跟resultMap不能同时存在。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="MyBatis" scheme="https://meilonme.github.io/categories/MyBatis/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>commons-fileupload</title>
-    <link href="https://meilonme.github.io/2017/07/05/commons/"/>
-    <id>https://meilonme.github.io/2017/07/05/commons/</id>
-    <published>2017-07-05T05:48:31.000Z</published>
-    <updated>2017-07-05T11:50:41.004Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="FileItem"><a href="#FileItem" class="headerlink" title="FileItem"></a>FileItem</h2><p>  FileItem 是一个接口, 定义了用于处理表单内容及文件内容的方法.<br>  每个表单中的单字段元素都会被封装成一个FileItem对象<br><a id="more"></a></p>
-<h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><ul>
-<li>String getFieldName();<br>  返回表单字段元素的name属性的值</li>
-<li>boolean isFormField();<br>  判断FileItem封装的数据类型<br>trun : 普通表单字段<br>false : 文件表单字段</li>
-<li>String getName();<br>返回上传文件的文件名(根据浏览器不同, 可能包含路径)</li>
-<li>void write();<br>将FileItem对象中的内容保存到指定文件</li>
-<li>String getString();<br>  把FileItem对象保存的主体内容以一个字符串返回</li>
-<li>String getString(String encoding);<br>getString()重载形式, 按照指定编码格式将内容转换成字符串并返回</li>
-<li>long getSize();<br>  返回单个上传文件的字节数</li>
-</ul>
-<p><br></p>
-<h2 id="FileItemFactory"><a href="#FileItemFactory" class="headerlink" title="FileItemFactory"></a>FileItemFactory</h2><p>FileItemFactory是一个接口, 是用于构建FileItem实列的工厂<br>  DiskFileItemFactory类是FileItemFactory接口的实现类</p>
-<h4 id="常用方法-1"><a href="#常用方法-1" class="headerlink" title="常用方法"></a>常用方法</h4><ul>
-<li>void  setSizeThreshold(int sizeThreshold);<br>  设置缓存大小</li>
-<li>void  setRepositoryPath(String path);<br>  设置临时文件存放目录</li>
-</ul>
-<p><br></p>
-<h2 id="ServeltFileUpload"><a href="#ServeltFileUpload" class="headerlink" title="ServeltFileUpload"></a>ServeltFileUpload</h2><p>ServeltFileUpload类是处理文件上传的一个核心类<br>    以List形式返回每个被封装成FileItem对象的表单元素集合<br>    ServeltFileUpload构造时通常以FileItemFactory对象作为参数</p>
-<h4 id="常用方法-2"><a href="#常用方法-2" class="headerlink" title="常用方法"></a>常用方法</h4><ul>
-<li>boolean isMultPartContent(HttpServletRequest request);<br>  静态方法, 判断请求数据中的内容是否是multipart/form-data类型</li>
-<li>List parseRequest(HttpServletRequest request);<br>  将请求数据中的每一字段, 单独封装成FileItem对象, 放入list集合返回</li>
-<li>void setSizeMax(long fileSizeMax);<br>  设置请求信息实体内容最大允许的的字节数(包含文件和表单数据)</li>
-<li>void setFileSizeMax(long fileSizeMax);<br>  设置文件最大上传字节数</li>
-<li>void setHeaderEncoding(String encoding);<br>  设置转换时使用的字符编码</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;FileItem&quot;&gt;&lt;a href=&quot;#FileItem&quot; class=&quot;headerlink&quot; title=&quot;FileItem&quot;&gt;&lt;/a&gt;FileItem&lt;/h2&gt;&lt;p&gt;  FileItem 是一个接口, 定义了用于处理表单内容及文件内容的方法.&lt;br&gt;  每个表单中的单字段元素都会被封装成一个FileItem对象&lt;br&gt;
-    
-    </summary>
-    
-      <category term="java笔记" scheme="https://meilonme.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>jsp session</title>
-    <link href="https://meilonme.github.io/2017/07/01/jsp%20session/"/>
-    <id>https://meilonme.github.io/2017/07/01/jsp session/</id>
-    <published>2017-07-01T14:28:35.000Z</published>
-    <updated>2017-07-02T06:31:01.499Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="session-对象"><a href="#session-对象" class="headerlink" title="session 对象"></a>session 对象</h3><p>session对象是HttpSession类的实例。<br>session对象在第一个JSP页面被装载时自动创建，完成会话期管理。<br>session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。<br>当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。<br><a id="more"></a><br>常用方法</p>
-<ul>
-<li><p>void setAttribute(String name , Object value )<br>设置指定名字name的属性值value，并将之存储在Session对象中．</p>
-</li>
-<li><p>Object getAttribute(String name )<br>获取指定名字name相联系的信息．</p>
-</li>
-<li><p>void removeAttribute( String name )<br>删除与提定名字name的相联系的信息．</p>
-</li>
-<li><p>Enumeration getAttributeNames()<br>返回Session对象中存储的每一个属性对象，其结果为一个类举的实例．</p>
-</li>
-<li><p>Long getCreationTime()<br>返回Session被创建的时间．最小单位为千分之一秒．</p>
-</li>
-<li><p>String getId()<br>此方法返回惟一的标识，这些标识为每个Session而产生．当只有一个单一的值与一个Session联合时，或当日志信息与先前的Session有关时，它被当做键名用．</p>
-</li>
-<li><p>Long GetLastAccessedTime()<br>返回当前Session对象最后被客户发送的时间，最单位为千分之一秒．</p>
-</li>
-<li><p>int GetMaxInactiveInterval()<br>返回总时间(秒)，负值表示Session永远不会超时．该时间为该Session对象的生存时间．</p>
-</li>
-<li><p>void invalidate()<br>销毁当前会话</p>
-</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;session-对象&quot;&gt;&lt;a href=&quot;#session-对象&quot; class=&quot;headerlink&quot; title=&quot;session 对象&quot;&gt;&lt;/a&gt;session 对象&lt;/h3&gt;&lt;p&gt;session对象是HttpSession类的实例。&lt;br&gt;session对象在第一个JSP页面被装载时自动创建，完成会话期管理。&lt;br&gt;session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。&lt;br&gt;当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="java笔记" scheme="https://meilonme.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>ASCII码对照表</title>
-    <link href="https://meilonme.github.io/2017/01/17/ASCII/"/>
-    <id>https://meilonme.github.io/2017/01/17/ASCII/</id>
-    <published>2017-01-17T07:03:27.000Z</published>
-    <updated>2017-09-17T14:06:58.138Z</updated>
+    <link href="https://meilonme.github.io/2016/01/17/ASCII/"/>
+    <id>https://meilonme.github.io/2016/01/17/ASCII/</id>
+    <published>2016-01-17T07:03:27.000Z</published>
+    <updated>2020-06-15T02:27:30.021Z</updated>
     
     <content type="html"><![CDATA[<p>SCII（American Standard Code for Information Interchange，美国信息互换标准代码，ASCⅡ）是基于拉丁字母的一套电脑编码系统。它主要用于显示现代英语和其他西欧语言。它是现今最通用的单字节编码系统，并等同于国际标准ISO/IEC 646。<br>　　ASCII第一次以规范标准的型态发表是在1967年，最后一次更新则是在1986年，至今为止共定义了128个字符，其中33个字符无法显示（这是以现今操作系统为依归，但在DOS模式下可显示出一些诸如笑脸、扑克牌花式等8-bit符号），且这33个字符多数都已是陈废的控制字符，控制字符的用途主要是用来操控已经处理过的文字，在33个字符之外的是95个可显示的字符，包含用键盘敲下空白键所产生的空白字符也算1个可显示字符（显示为空白）。<br><a id="more"></a></p>
 <h3 id="ASCII控制字符"><a href="#ASCII控制字符" class="headerlink" title="ASCII控制字符"></a>ASCII控制字符</h3><table>
@@ -1064,11 +924,110 @@
   </entry>
   
   <entry>
+    <title>commons-fileupload</title>
+    <link href="https://meilonme.github.io/2015/07/05/commons/"/>
+    <id>https://meilonme.github.io/2015/07/05/commons/</id>
+    <published>2015-07-05T05:48:31.000Z</published>
+    <updated>2020-06-15T02:27:31.057Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="FileItem"><a href="#FileItem" class="headerlink" title="FileItem"></a>FileItem</h2><p>  FileItem 是一个接口, 定义了用于处理表单内容及文件内容的方法.<br>  每个表单中的单字段元素都会被封装成一个FileItem对象<br><a id="more"></a></p>
+<h4 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h4><ul>
+<li>String getFieldName();<br>  返回表单字段元素的name属性的值</li>
+<li>boolean isFormField();<br>  判断FileItem封装的数据类型<br>trun : 普通表单字段<br>false : 文件表单字段</li>
+<li>String getName();<br>返回上传文件的文件名(根据浏览器不同, 可能包含路径)</li>
+<li>void write();<br>将FileItem对象中的内容保存到指定文件</li>
+<li>String getString();<br>  把FileItem对象保存的主体内容以一个字符串返回</li>
+<li>String getString(String encoding);<br>getString()重载形式, 按照指定编码格式将内容转换成字符串并返回</li>
+<li>long getSize();<br>  返回单个上传文件的字节数</li>
+</ul>
+<p><br></p>
+<h2 id="FileItemFactory"><a href="#FileItemFactory" class="headerlink" title="FileItemFactory"></a>FileItemFactory</h2><p>FileItemFactory是一个接口, 是用于构建FileItem实列的工厂<br>  DiskFileItemFactory类是FileItemFactory接口的实现类</p>
+<h4 id="常用方法-1"><a href="#常用方法-1" class="headerlink" title="常用方法"></a>常用方法</h4><ul>
+<li>void  setSizeThreshold(int sizeThreshold);<br>  设置缓存大小</li>
+<li>void  setRepositoryPath(String path);<br>  设置临时文件存放目录</li>
+</ul>
+<p><br></p>
+<h2 id="ServeltFileUpload"><a href="#ServeltFileUpload" class="headerlink" title="ServeltFileUpload"></a>ServeltFileUpload</h2><p>ServeltFileUpload类是处理文件上传的一个核心类<br>    以List形式返回每个被封装成FileItem对象的表单元素集合<br>    ServeltFileUpload构造时通常以FileItemFactory对象作为参数</p>
+<h4 id="常用方法-2"><a href="#常用方法-2" class="headerlink" title="常用方法"></a>常用方法</h4><ul>
+<li>boolean isMultPartContent(HttpServletRequest request);<br>  静态方法, 判断请求数据中的内容是否是multipart/form-data类型</li>
+<li>List parseRequest(HttpServletRequest request);<br>  将请求数据中的每一字段, 单独封装成FileItem对象, 放入list集合返回</li>
+<li>void setSizeMax(long fileSizeMax);<br>  设置请求信息实体内容最大允许的的字节数(包含文件和表单数据)</li>
+<li>void setFileSizeMax(long fileSizeMax);<br>  设置文件最大上传字节数</li>
+<li>void setHeaderEncoding(String encoding);<br>  设置转换时使用的字符编码</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;FileItem&quot;&gt;&lt;a href=&quot;#FileItem&quot; class=&quot;headerlink&quot; title=&quot;FileItem&quot;&gt;&lt;/a&gt;FileItem&lt;/h2&gt;&lt;p&gt;  FileItem 是一个接口, 定义了用于处理表单内容及文件内容的方法.&lt;br&gt;  每个表单中的单字段元素都会被封装成一个FileItem对象&lt;br&gt;
+    
+    </summary>
+    
+      <category term="java笔记" scheme="https://meilonme.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MyBatis  ResultMap复杂映射</title>
+    <link href="https://meilonme.github.io/2014/09/17/resultMap/"/>
+    <id>https://meilonme.github.io/2014/09/17/resultMap/</id>
+    <published>2014-09-17T02:59:51.000Z</published>
+    <updated>2020-06-15T02:27:33.316Z</updated>
+    
+    <content type="html"><![CDATA[<p>&emsp;&emsp;MyBatis中在查询进行select映射的时候，返回类型可以用resultType，也可以用<br>resultMap。resultType是直接表示返回类型的,而resultMap则是对外部ResultMap的引用<br>但是resultType跟resultMap不能同时存在。<br><a id="more"></a><br>&emsp;&emsp;在MyBatis进行查询映射的时候，其实查询出来的每一个属性都是放在一个对应的Map里面的，其中键是属性名，值则是其对应的值。当提供的返回类型属性是resultType的时候，MyBatis会将Map里面的键值对取出赋给resultType所指定的对象对应的属性。所以其实MyBatis的每一个查询映射的返回类型都是ResultMap，只是当我们提供的返回类型属性是resultType的时候，MyBatis对自动的给我们把对应的值赋给resultType所指定对象的属性，但当这个对象中有自定义类型的属性时, Mybatis就无法自动装配这个属性了, 此时就需要用到resultMap了, Mybatis会根据我们配置的信息进行映射</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">"bookWhole"</span> <span class="attr">type</span>=<span class="string">"book"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">constructor</span>&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">idArg</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"book_id"</span> <span class="attr">javaType</span>=<span class="string">"int"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"bookName"</span> <span class="attr">column</span>=<span class="string">"bookName"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">constructor</span>&gt;</span> </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"publishPress"</span> <span class="attr">column</span>=<span class="string">"publishPress"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">priority</span>=<span class="string">"publishDate"</span> <span class="attr">column</span>=<span class="string">"publishDate"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">association</span> <span class="attr">property</span>=<span class="string">"type"</span> <span class="attr">javaType</span>=<span class="string">"bookType"</span> <span class="attr">column</span>=<span class="string">"bookType"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"type_id"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"typeName"</span> <span class="attr">column</span>=<span class="string">"typeName"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">association</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">collection</span> <span class="attr">property</span>=<span class="string">"authors"</span> <span class="attr">ofType</span>=<span class="string">"author"</span> <span class="attr">column</span>=<span class="string">"author"</span> &gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"author_id"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"name"</span> <span class="attr">column</span>=<span class="string">"author_name"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">collection</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="resultMap元素"><a href="#resultMap元素" class="headerlink" title="resultMap元素"></a>resultMap元素</h2><p>resultMap元素是复杂映射的根元素, 其id表示select查询中要配置的名称, type指定一个实体类</p>
+<h3 id="一-Constructor-元素"><a href="#一-Constructor-元素" class="headerlink" title="一. Constructor 元素"></a>一. Constructor 元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">constructor</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">idArg</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"book_id"</span> <span class="attr">javaType</span>=<span class="string">"int"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"bookName"</span> <span class="attr">column</span>=<span class="string">"bookName"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">constructor</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>实例化的时候通过构造器将结果集注入到类中<br>idArg : ID 参数; 将结果集标记为ID，以方便全局调用<br>arg : 注入构造器的结果集</p>
+<h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h4><ul>
+<li>property 映射数据库列的字段或属性。若 JavaBean 的属性名与给定的名称匹配，就会使用匹配的名字。否则，MyBatis 将搜索给定名称的字段。</li>
+<li>column 数据库的列名或者列标签别名。与传递给resultSet.getString(columnName)的参数名称相同。</li>
+<li>javaType 指定java类名。如果映射到一个JavaBean，MyBatis 通常会自行检测到。如果映射到一个HashMap，应该明确指定javaType。</li>
+<li>jdbcType 指定支持的JDBC。这个属性只在insert，update或delete 的时候针对允许空的列有用。JDBC 需要这项，但MyBatis 不需要。如果直接编写JDBC代码，在允许为空值的情况下需要指定这个类型。</li>
+<li>typeHandler 这个属性可以重写默认类型处理器。它的值可以是一个TypeHandler实现的完整类名，也可以是一个类型别名。</li>
+</ul>
+<h3 id="二-id-result-元素"><a href="#二-id-result-元素" class="headerlink" title="二. id, result 元素"></a>二. id, result 元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"type_id"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"typeName"</span> <span class="attr">column</span>=<span class="string">"typeName"</span>/&gt;</span></div></pre></td></tr></table></figure>
+<p> id对应表中的主键, result对应普通列. 两者的作用都是将数据库列映射到属性.<br> 虽然不使用id元素也不会影响映射结果, 但比较对象实例时id会作为结果集的标识属性, 能够提高性能, 尤其是应用缓存和嵌套结果映射的时候</p>
+<h4 id="属性-1"><a href="#属性-1" class="headerlink" title="属性"></a>属性</h4><p>id、result的属性效果和Constructor元素一样</p>
+<h3 id="三-Association元素"><a href="#三-Association元素" class="headerlink" title="三. Association元素"></a>三. Association元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">association</span> <span class="attr">property</span>=<span class="string">"type"</span> <span class="attr">javaType</span>=<span class="string">"bookType"</span> <span class="attr">column</span>=<span class="string">"bookType"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"type_id"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"typeName"</span> <span class="attr">column</span>=<span class="string">"typeName"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">association</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>&emsp;&emsp;Association元素 : 复杂类型联合;许多查询结果合成这个类型. 用来处理”多对一(many-to-one)”或”一对一(one-to-one)” 这类关系.<br>associations能引用自身,或者从其它地方引用</p>
+<h4 id="属性-2"><a href="#属性-2" class="headerlink" title="属性"></a>属性</h4><ul>
+<li>Association元素的包含了Constructor元素的所有属性, 同时也有自己特用的属性</li>
+<li>select 这个属性，通过ID引用另一个加载复杂类型的映射语句。从指定列属性中返回的值，将作为参数设置给目标select 语句。表格下方将有一个例子。注意：在处理组合键时，您可以使用column=”{prop1=col1,prop2=col2}”这样的语法，设置多个列名传入到嵌套语句。这就会把prop1和prop2设置到目标嵌套语句的参数对象中。</li>
+</ul>
+<h3 id="四-Collection元素"><a href="#四-Collection元素" class="headerlink" title="四. Collection元素"></a>四. Collection元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">collection</span> <span class="attr">property</span>=<span class="string">"authors"</span> <span class="attr">ofType</span>=<span class="string">"author"</span> <span class="attr">column</span>=<span class="string">"author"</span> &gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">"id"</span> <span class="attr">column</span>=<span class="string">"author_id"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"name"</span> <span class="attr">column</span>=<span class="string">"author_name"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">collection</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>&emsp;&emsp;Collection元素的功能和Associations非常类似, 其主要用来处理”一对多(one-to-many)”或”多对多(many-to-many)”这类关系, 返回一个结果集.<br>Collenction也能引用自身, 或者从其他地方引用</p>
+<h4 id="属性-3"><a href="#属性-3" class="headerlink" title="属性"></a>属性</h4><ul>
+<li>Collection元素和Association元素的属性一样, 同时有自己的特有属性</li>
+<li>ofType 这个属性用来区分JavaBean(或字段)属性类型和集合包含的类型（类型明确下也可以省略）, 当使用反向查询select从另一个maper文件中取出数据时必须用ofType.</li>
+</ul>
+<h3 id="五-Discriminator元素"><a href="#五-Discriminator元素" class="headerlink" title="五. Discriminator元素"></a>五. Discriminator元素</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">"vehicleResult"</span> <span class="attr">type</span>=<span class="string">"Vehicle"</span>&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">”id”</span> <span class="attr">column</span>=<span class="string">"id"</span> /&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"vin"</span> <span class="attr">column</span>=<span class="string">"vin"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"year"</span> <span class="attr">column</span>=<span class="string">"year"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"make"</span> <span class="attr">column</span>=<span class="string">"make"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"model"</span> <span class="attr">column</span>=<span class="string">"model"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">"color"</span> <span class="attr">column</span>=<span class="string">"color"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">discriminator</span> <span class="attr">javaType</span>=<span class="string">"int"</span> <span class="attr">column</span>=<span class="string">"vehicle_type"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">case</span> <span class="attr">value</span>=<span class="string">"1"</span> <span class="attr">resultMap</span>=<span class="string">"carResult"</span>/&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">case</span> <span class="attr">value</span>=<span class="string">"2"</span> <span class="attr">resultMap</span>=<span class="string">"truckResult"</span>/&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">case</span> <span class="attr">value</span>=<span class="string">"3"</span> <span class="attr">resultMap</span>=<span class="string">"vanResult"</span>/&gt;</span>  </div><div class="line">        <span class="tag">&lt;<span class="name">case</span> <span class="attr">value</span>=<span class="string">"4"</span> <span class="attr">resultMap</span>=<span class="string">"suvResult"</span>/&gt;</span>  </div><div class="line">    <span class="tag">&lt;/<span class="name">discriminator</span>&gt;</span>  </div><div class="line"><span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>&emsp;&emsp;有时一条数据库查询会返回包括各种不同的数据类型的结果集。Discriminator（识别器）元素被设计来处理这种情况，以及其它像类继承层次情况。识别器类似java中的switch语句。<br>&emsp;&emsp;Discriminator定义要指定column和javaType属性。列是MyBatis将要取出进行比较的值，javaType用来确定适当的测试是否正确运行</p>
+<h4 id="属性-4"><a href="#属性-4" class="headerlink" title="属性"></a>属性</h4><ul>
+<li>javaType 用来确定适当的测试是否正确运行</li>
+<li>column 指定MyBatis将要进行比较的列</li>
+</ul>
+<h4 id="case元素"><a href="#case元素" class="headerlink" title="case元素"></a>case元素</h4><p>&emsp;&emsp;discriminator的子元素, MyBatis会从结果集中取出每条记录, 然后比较它的vehicle_type的值. 如果匹配任何 discriminator 中 case 的 value 值 , 它将使用case指定的resultMap, 而其它的case的resultMap将会被忽略 ( 除非使用extended ), 如果没有匹配到任何case，MyBatis只是简单的使用定义在discriminator块外面的resultMap. </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;emsp;&amp;emsp;MyBatis中在查询进行select映射的时候，返回类型可以用resultType，也可以用&lt;br&gt;resultMap。resultType是直接表示返回类型的,而resultMap则是对外部ResultMap的引用&lt;br&gt;但是resultType跟resultMap不能同时存在。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="MyBatis" scheme="https://meilonme.github.io/categories/MyBatis/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>MyEclipse 快捷键整理</title>
-    <link href="https://meilonme.github.io/2016/09/17/MyEclipse/"/>
-    <id>https://meilonme.github.io/2016/09/17/MyEclipse/</id>
-    <published>2016-09-17T12:34:19.000Z</published>
-    <updated>2017-09-17T14:19:33.004Z</updated>
+    <link href="https://meilonme.github.io/2013/09/17/MyEclipse/"/>
+    <id>https://meilonme.github.io/2013/09/17/MyEclipse/</id>
+    <published>2013-09-17T12:34:19.000Z</published>
+    <updated>2020-06-15T02:27:32.713Z</updated>
     
     <content type="html"><![CDATA[<p>MyEclipse是应用非常广泛的一个IDE之一,  熟练的使用IDE能够大大提高程序员的开发效率.<br>熟练使用IDE的精髓就在于快捷键的使用了.<br><a id="more"></a></p>
 <h4 id="常用编辑器快捷键"><a href="#常用编辑器快捷键" class="headerlink" title="常用编辑器快捷键"></a>常用编辑器快捷键</h4><p>【Ctrl+C】：复制<br>【Ctrl+X】：剪切<br>【Ctrl+V】：粘贴<br>【Ctrl+S】：保存文件<br>【Ctrl+Z】：撤销<br>【Ctrl+Y】：重复<br>【Ctrl+F】：查找/替换</p>
@@ -1087,6 +1046,47 @@
     </summary>
     
       <category term="IDE" scheme="https://meilonme.github.io/categories/IDE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jsp session</title>
+    <link href="https://meilonme.github.io/2013/07/01/jsp%20session/"/>
+    <id>https://meilonme.github.io/2013/07/01/jsp session/</id>
+    <published>2013-07-01T14:28:35.000Z</published>
+    <updated>2020-06-15T02:27:32.205Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="session-对象"><a href="#session-对象" class="headerlink" title="session 对象"></a>session 对象</h3><p>session对象是HttpSession类的实例。<br>session对象在第一个JSP页面被装载时自动创建，完成会话期管理。<br>session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。<br>当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。<br><a id="more"></a><br>常用方法</p>
+<ul>
+<li><p>void setAttribute(String name , Object value )<br>设置指定名字name的属性值value，并将之存储在Session对象中．</p>
+</li>
+<li><p>Object getAttribute(String name )<br>获取指定名字name相联系的信息．</p>
+</li>
+<li><p>void removeAttribute( String name )<br>删除与提定名字name的相联系的信息．</p>
+</li>
+<li><p>Enumeration getAttributeNames()<br>返回Session对象中存储的每一个属性对象，其结果为一个类举的实例．</p>
+</li>
+<li><p>Long getCreationTime()<br>返回Session被创建的时间．最小单位为千分之一秒．</p>
+</li>
+<li><p>String getId()<br>此方法返回惟一的标识，这些标识为每个Session而产生．当只有一个单一的值与一个Session联合时，或当日志信息与先前的Session有关时，它被当做键名用．</p>
+</li>
+<li><p>Long GetLastAccessedTime()<br>返回当前Session对象最后被客户发送的时间，最单位为千分之一秒．</p>
+</li>
+<li><p>int GetMaxInactiveInterval()<br>返回总时间(秒)，负值表示Session永远不会超时．该时间为该Session对象的生存时间．</p>
+</li>
+<li><p>void invalidate()<br>销毁当前会话</p>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;session-对象&quot;&gt;&lt;a href=&quot;#session-对象&quot; class=&quot;headerlink&quot; title=&quot;session 对象&quot;&gt;&lt;/a&gt;session 对象&lt;/h3&gt;&lt;p&gt;session对象是HttpSession类的实例。&lt;br&gt;session对象在第一个JSP页面被装载时自动创建，完成会话期管理。&lt;br&gt;session属于会话作用域, 从客户端打开浏览器并连接到服务器开始，到客户端关闭浏览器离开这个服务器结束，被称为一个会话。&lt;br&gt;当一个客户访问一个服务器，可能会在服务器的几个页面之间切换，服务器当通过某种办法知道这是一个客户，就需要session对象。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="java笔记" scheme="https://meilonme.github.io/categories/java%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
